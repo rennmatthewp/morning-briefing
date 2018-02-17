@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
 import { populateNews, populateWeather } from '../../actions';
-import { nytKey, wuKey } from '../../helper/.apiKeys'
+import { nytKey, wuKey } from '../../helper/.apiKeys';
 
 class App extends Component {
   componentDidMount() {
