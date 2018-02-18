@@ -2,20 +2,27 @@ import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
 import { populateNews, populateWeather } from '../../actions';
-import { nytKey, wuKey } from '../../helper/.apiKeys'
+import { getNews, getWeather } from '../../helper/apiHelper';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      errorStatus: null
+    };
+  }
+
   componentDidMount() {
-    fetch(
-      `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${nytKey}`
-    )
-      .then(res => res.json())
-      .then(res => this.props.populateNews(res.results));
-    fetch(
-      `http://api.wunderground.com/api/${wuKey}/hourly/q/CO/Denver.json`
-    )
-      .then(res => res.json())
-      .then(res => this.props.populateWeather(res.hourly_forecast));
+    getNews()
+      .then(this.props.populateNews)
+      .catch(error => {
+        this.setState({ errorStatus: error });
+      });
+    getWeather()
+      .then(this.props.populateWeather)
+      .catch(error => {
+        this.setState({ errorStatus: error });
+      });
   }
 
   render() {
