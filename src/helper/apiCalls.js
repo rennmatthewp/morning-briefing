@@ -13,11 +13,18 @@ export const getNews = () => {
 
 export const getWeather = () => {
   return fetch(
-    `http://api.wunderground.com/api/${wuKey}/hourly/q/CO/Denver.json`
+    `http://api.wunderground.com/api/${wuKey}/conditions/hourly/q/CO/Denver.json`
   )
     .then(res => res.json())
-    .then(res => res.hourly_forecast)
+    .then(res => console.log(res)
+    )
     .catch(error => {
       throw new Error(error);
     });
 };
+
+export const cleanWeatherData = (response) => {
+  return {
+    
+  }
+}
