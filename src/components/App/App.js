@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
 import { populateNews, populateWeather } from '../../actions';
-import { getNews, getWeather } from '../../helper/apiHelper';
+import { getNews, getWeather } from '../../helper/apiCalls';
 
-class App extends Component {
+export class App extends Component {
   constructor() {
     super();
     this.state = {
