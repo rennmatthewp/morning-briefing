@@ -26,9 +26,9 @@ export const getWeather = () => {
 export const cleanNewsData = results => {
   return results.map(article => ({
     title: article.title,
-    byline: article.byline,
     abstract: article.abstract,
-    thumbnail: article.multimedia[0].url,
+    byline: article.byline,
+    // thumbnail: article.multimedia[0].url,
     url: article.url
   }));
 };
@@ -36,7 +36,7 @@ export const cleanNewsData = results => {
 export const cleanWeatherData = response => {
   const {
     current_observation: {
-      display_location,
+      observation_location,
       observation_time,
       temp_f,
       weather,
@@ -45,7 +45,7 @@ export const cleanWeatherData = response => {
     hourly_forecast
   } = response;
   const currentObservation = {
-    location: display_location.city,
+    location: observation_location.city,
     currentTime: observation_time,
     conditions: weather,
     icon: icon_url,
