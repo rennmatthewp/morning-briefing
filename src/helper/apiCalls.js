@@ -1,3 +1,4 @@
+/*eslint-disable camelcase, max-len*/
 import { nytKey, wuKey } from './.apiKeys';
 
 export const getNews = () => {

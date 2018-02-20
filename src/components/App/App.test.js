@@ -8,4 +8,4 @@ describe('App', () => {
 
     expect(renderedApp).toMatchSnapshot();
   });
-})
+});
