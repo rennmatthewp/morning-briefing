@@ -3,6 +3,8 @@ import './App.css';
 import { connect } from 'react-redux';
 import { populateNews, populateWeather } from '../../actions';
 import { getNews, getWeather } from '../../helper/apiCalls';
+import NewsContainer from '../NewsContainer/NewsContainer';
+import WeatherContainer from '../WeatherContainer/WeatherContainer';
 
 export class App extends Component {
   constructor() {
@@ -26,7 +28,12 @@ export class App extends Component {
   }
 
   render() {
-    return <div className="App">Hello, World</div>;
+    return (
+      <div className="App">
+        <NewsContainer />
+        <WeatherContainer />
+      </div>
+    );
   }
 }
 
