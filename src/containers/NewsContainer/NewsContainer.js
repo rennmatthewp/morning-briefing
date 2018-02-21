@@ -4,9 +4,7 @@ import { connect } from 'react-redux';
 import NewsCard from '../../components/NewsCard/NewsCard'
 
 export class NewsContainer extends Component {
-  render() {
-    console.log('newscont',this.props)
-        
+  render() {        
     const articles = this.props.articles.map(article => (
       <NewsCard key={article.title} {...article} />
     ));
