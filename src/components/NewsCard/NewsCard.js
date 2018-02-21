@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const NewsCard = ({ title, abstract, byline, url, thumbnail }) => {
+export const NewsCard = ({ title, abstract, byline, url, thumbnail }) => {
   return (
     <div>
       <a href={url}>
@@ -19,8 +19,8 @@ NewsCard.propTypes = {
   title: PropTypes.string,
   abstract: PropTypes.string,
   byline: PropTypes.string,
-  url: PropTypes.string
-  // thumbnail: PropTypes.string
+  url: PropTypes.string,
+  thumbnail: PropTypes.string
 };
 
 export default NewsCard;
