@@ -1,7 +1,7 @@
-export const weatherReducer = (state = [], action) => {
+export const weatherReducer = (state = {}, action) => {
   switch (action.type) {
     case 'POPULATE_WEATHER':
-      return [...state, ...action.weatherArray];
+      return {...state, ...action.weatherObj};
     default:
       return state;
   }

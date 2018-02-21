@@ -3,7 +3,7 @@ export const populateNews = storiesArray => ({
   storiesArray
 });
 
-export const populateWeather = weatherArray => ({
+export const populateWeather = weatherObj => ({
   type: 'POPULATE_WEATHER',
-  weatherArray
+  weatherObj
 });

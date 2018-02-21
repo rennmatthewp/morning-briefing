@@ -3,8 +3,8 @@ import './App.css';
 import { connect } from 'react-redux';
 import { populateNews, populateWeather } from '../../actions';
 import { getNews, getWeather } from '../../helper/apiCalls';
-import NewsContainer from '../NewsContainer/NewsContainer';
-import WeatherContainer from '../WeatherContainer/WeatherContainer';
+import NewsContainer from '../../containers/NewsContainer/NewsContainer';
+import WeatherContainer from '../../containers/WeatherContainer/WeatherContainer';
 
 export class App extends Component {
   constructor() {
@@ -15,13 +15,13 @@ export class App extends Component {
   }
 
   componentDidMount() {
-    getNews()
-      .then(this.props.populateNews)
+    getWeather()
+      .then(this.props.populateWeather)
       .catch(error => {
         this.setState({ errorStatus: error });
       });
-    getWeather()
-      .then(this.props.populateWeather)
+    getNews()
+      .then(this.props.populateNews)
       .catch(error => {
         this.setState({ errorStatus: error });
       });
@@ -30,16 +30,16 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        <NewsContainer />
         <WeatherContainer />
+        <NewsContainer />
       </div>
     );
   }
 }
 
 export const mapDispatchToProps = dispatch => ({
-  populateNews: storiesArray => dispatch(populateNews(storiesArray)),
-  populateWeather: weatherArray => dispatch(populateWeather(weatherArray))
+  populateNews: stories => dispatch(populateNews(stories)),
+  populateWeather: weather => dispatch(populateWeather(weather))
 });
 
 export default connect(null, mapDispatchToProps)(App);

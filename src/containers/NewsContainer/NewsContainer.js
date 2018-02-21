@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import NewsCard from '../NewsCard/NewsCard';
 import { connect } from 'react-redux';
+import NewsCard from '../../components/NewsCard/NewsCard'
 
 export class NewsContainer extends Component {
   render() {
+    console.log('newscont',this.props)
+        
     const articles = this.props.articles.map(article => (
       <NewsCard key={article.title} {...article} />
     ));
@@ -17,7 +19,7 @@ NewsContainer.propTypes = {
 };
 
 export const mapStateToProps = state => ({
-  articles: state.newsReducer
+  articles: state.newsStories
 });
 
 export default connect(mapStateToProps, null)(NewsContainer);
