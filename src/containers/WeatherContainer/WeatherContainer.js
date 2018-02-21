@@ -6,8 +6,8 @@ import { WeatherCard } from '../../components/WeatherCard/WeatherCard';
 export const WeatherContainer = ({ currentObservation, hourlyForecast }) => {
   const hourlyForecastCards = hourlyForecast
     ? hourlyForecast.map((hour, index) => (
-        <WeatherCard hourlyForecast={hour} key={index} />
-      ))
+      <WeatherCard hourlyForecast={hour} key={index} />
+    ))
     : 'Loading';
 
   const currentObservationCard = (
@@ -23,10 +23,8 @@ export const WeatherContainer = ({ currentObservation, hourlyForecast }) => {
 };
 
 WeatherContainer.propTypes = {
-  weather: PropTypes.shape({
-    currentObservation: PropTypes.object,
-    hourlyForecast: PropTypes.arrayOf(PropTypes.object)
-  })
+  currentObservation: PropTypes.object,
+  hourlyForecast: PropTypes.arrayOf(PropTypes.object)
 };
 
 export const mapStateToProps = state => ({

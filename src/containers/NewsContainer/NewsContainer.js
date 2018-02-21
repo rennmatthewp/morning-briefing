@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import NewsCard from '../../components/NewsCard/NewsCard'
+import NewsCard from '../../components/NewsCard/NewsCard';
 
 export class NewsContainer extends Component {
-  render() {        
+  render() {
     const articles = this.props.articles.map(article => (
       <NewsCard key={article.title} {...article} />
     ));
