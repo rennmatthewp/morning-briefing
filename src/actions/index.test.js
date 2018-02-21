@@ -12,12 +12,12 @@ describe('actions', () => {
   });
 
   it('should create an action to add weather data', () => {
-    const weatherArray = [{}, {}, {}];
+    const weatherObj = { currentObservation: {}, hourlyForecast: [{}, {}, {}] };
     const expectedAction = {
       type: 'POPULATE_WEATHER',
-      weatherArray
+      weatherObj
     };
 
-    expect(actions.populateWeather(weatherArray)).toEqual(expectedAction);
+    expect(actions.populateWeather(weatherObj)).toEqual(expectedAction);
   });
 });

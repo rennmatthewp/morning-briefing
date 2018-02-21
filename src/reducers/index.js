@@ -3,6 +3,6 @@ import { newsReducer } from './newsReducer';
 import { weatherReducer } from './weatherReducer';
 
 export const rootReducer = combineReducers({
-  newsReducer,
-  weatherReducer
+  newsStories: newsReducer,
+  weather: weatherReducer
 });

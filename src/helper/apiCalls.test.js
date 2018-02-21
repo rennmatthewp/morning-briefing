@@ -8,15 +8,11 @@ import {
 } from './apiCalls';
 
 describe('getNews', () => {
-  xit('should fetch news data', () => {
-
-  });
+  xit('should fetch news data', () => {});
 });
 
 describe('getWeather', () => {
-  xit('should fetch weather data', () => {
-
-  });
+  xit('should fetch weather data', () => {});
 });
 
 describe('cleanNewsData', () => {
@@ -47,68 +43,7 @@ describe('cleanNewsData', () => {
         org_facet: ['Facebook Inc', 'Twitter'],
         per_facet: ['Trump, Donald J', 'Mueller, Robert S III'],
         geo_facet: ['Russia'],
-        multimedia: [
-          {
-            url:
-              'https://static01.nyt.com/images/2018/02/19/us/19dc-russians2/19dc-russians2-thumbStandard-v2.jpg',
-            format: 'Standard Thumbnail',
-            height: 75,
-            width: 75,
-            type: 'image',
-            subtype: 'photo',
-            caption:
-              'About a dozen people protested against what they called the threat of radical Islam in Houston in May 2016. They were met by a much larger crowd of counterprotesters. Both sides were organized by Russian groups.',
-            copyright: 'Jon Shapley/Houston Chronicle'
-          },
-          {
-            url:
-              'https://static01.nyt.com/images/2018/02/19/us/19dc-russians2/19dc-russians2-thumbLarge-v2.jpg',
-            format: 'thumbLarge',
-            height: 150,
-            width: 150,
-            type: 'image',
-            subtype: 'photo',
-            caption:
-              'About a dozen people protested against what they called the threat of radical Islam in Houston in May 2016. They were met by a much larger crowd of counterprotesters. Both sides were organized by Russian groups.',
-            copyright: 'Jon Shapley/Houston Chronicle'
-          },
-          {
-            url:
-              'https://static01.nyt.com/images/2018/02/19/us/19dc-russians2/19dc-russians2-articleInline-v2.jpg',
-            format: 'Normal',
-            height: 127,
-            width: 190,
-            type: 'image',
-            subtype: 'photo',
-            caption:
-              'About a dozen people protested against what they called the threat of radical Islam in Houston in May 2016. They were met by a much larger crowd of counterprotesters. Both sides were organized by Russian groups.',
-            copyright: 'Jon Shapley/Houston Chronicle'
-          },
-          {
-            url:
-              'https://static01.nyt.com/images/2018/02/19/us/19dc-russians2/19dc-russians2-mediumThreeByTwo210-v2.jpg',
-            format: 'mediumThreeByTwo210',
-            height: 140,
-            width: 210,
-            type: 'image',
-            subtype: 'photo',
-            caption:
-              'About a dozen people protested against what they called the threat of radical Islam in Houston in May 2016. They were met by a much larger crowd of counterprotesters. Both sides were organized by Russian groups.',
-            copyright: 'Jon Shapley/Houston Chronicle'
-          },
-          {
-            url:
-              'https://static01.nyt.com/images/2018/02/19/us/19dc-russians2/19dc-russians2-superJumbo-v2.jpg',
-            format: 'superJumbo',
-            height: 1365,
-            width: 2048,
-            type: 'image',
-            subtype: 'photo',
-            caption:
-              'About a dozen people protested against what they called the threat of radical Islam in Houston in May 2016. They were met by a much larger crowd of counterprotesters. Both sides were organized by Russian groups.',
-            copyright: 'Jon Shapley/Houston Chronicle'
-          }
-        ],
+        multimedia: [],
         short_url: 'https://nyti.ms/2C5LodP'
       },
       {
@@ -208,8 +143,7 @@ describe('cleanNewsData', () => {
         abstract:
           'With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.',
         byline: 'By SCOTT SHANE',
-        thumbnail:
-          'https://static01.nyt.com/images/2018/02/19/us/19dc-russians2/19dc-russians2-thumbStandard-v2.jpg',
+        thumbnail: 'https://avatars1.githubusercontent.com/u/221409?s=200&v=4',
         url:
           'https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html'
       },
@@ -221,7 +155,7 @@ describe('cleanNewsData', () => {
           'https://www.nytimes.com/2018/02/20/magazine/the-case-against-google.html',
         byline: 'By CHARLES DUHIGG',
         thumbnail:
-          'https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-thumbStandard.png'
+          'https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-mediumThreeByTwo210.png'
       }
     ];
 
@@ -570,33 +504,35 @@ describe('cleanWeatherData', () => {
       ]
     };
 
-    const expected = [
-      {
+    const expected = {
+      currentObservation: {
         conditions: 'Mostly Cloudy',
         currentTime: 'Last Updated on February 20, 10:06 AM MST',
         icon: 'http://icons.wxug.com/i/c/k/mostlycloudy.gif',
         location: 'Capitol Hill, Denver',
         temp: 11.8
       },
-      {
-        hour: '11:00 AM',
-        icon: 'http://icons.wxug.com/i/c/k/cloudy.gif',
-        pop: '15',
-        temp: '13'
-      },
-      {
-        hour: '12:00 PM',
-        icon: 'http://icons.wxug.com/i/c/k/cloudy.gif',
-        pop: '15',
-        temp: '15'
-      },
-      {
-        hour: '1:00 PM',
-        icon: 'http://icons.wxug.com/i/c/k/cloudy.gif',
-        pop: '15',
-        temp: '17'
-      }
-    ];
+      hourlyForecast: [
+        {
+          hour: '11:00 AM',
+          icon: 'http://icons.wxug.com/i/c/k/cloudy.gif',
+          pop: '15',
+          temp: '13'
+        },
+        {
+          hour: '12:00 PM',
+          icon: 'http://icons.wxug.com/i/c/k/cloudy.gif',
+          pop: '15',
+          temp: '15'
+        },
+        {
+          hour: '1:00 PM',
+          icon: 'http://icons.wxug.com/i/c/k/cloudy.gif',
+          pop: '15',
+          temp: '17'
+        }
+      ]
+    };
 
     expect(cleanWeatherData(mockResponse)).toEqual(expected);
   });
