@@ -24,15 +24,19 @@ export const getWeather = () => {
 };
 
 export const cleanNewsData = results => {
-  return results.map((article, index) => {
-    const thumbnail = article.multimedia[0]
-      ? article.multimedia[3].url
+   return results.map((article, index) => {
+    const thumbnail = article.multimedia[3]
+      ? {
+          url: article.multimedia[3].url,
+          caption: article.multimedia[3].caption
+        }
       : 'https://avatars1.githubusercontent.com/u/221409?s=200&v=4';
     const articleObj = {
       title: article.title,
       abstract: article.abstract,
       byline: article.byline,
-      thumbnail: thumbnail,
+      thumbnail: thumbnail.url,
+      caption: thumbnail.caption,
       url: article.url
     };
     return articleObj;
@@ -61,5 +65,5 @@ export const cleanWeatherData = ({ current_observation, hourly_forecast }) => {
     hour: hour.FCTTIME.civil
   }));
 
-  return {currentObservation, hourlyForecast};
+  return { currentObservation, hourlyForecast };
 };
