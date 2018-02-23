@@ -1,14 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { arrayOf, object } from 'prop-types';
 import { connect } from 'react-redux';
 import { WeatherCard } from '../../components/WeatherCard/WeatherCard';
 
 export const WeatherContainer = ({ currentObservation, hourlyForecast }) => {
   const hourlyForecastCards = hourlyForecast
     ? hourlyForecast.map((hour, index) => (
-      <WeatherCard hourlyForecast={hour} key={index} />
-    ))
-    : 'Loading';
+        <WeatherCard hourlyForecast={hour} key={index} />
+      ))
+    : 'Loading...';
 
   const currentObservationCard = (
     <WeatherCard currentObservation={currentObservation} />
