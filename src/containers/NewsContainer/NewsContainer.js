@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import {arrayOf, object} from 'prop-types';
 import { connect } from 'react-redux';
 import NewsCard from '../../components/NewsCard/NewsCard';
 
@@ -13,7 +13,7 @@ export class NewsContainer extends Component {
 }
 
 NewsContainer.propTypes = {
-  articles: PropTypes.arrayOf(PropTypes.object)
+  articles: arrayOf(object)
 };
 
 export const mapStateToProps = state => ({
