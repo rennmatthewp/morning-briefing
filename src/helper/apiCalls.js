@@ -1,50 +1,73 @@
+/*eslint-disable camelcase, max-len*/
 import { nytKey, wuKey } from './.apiKeys';
 
-export const getNews = () => {
-  return fetch(
-    `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${nytKey}`
-  )
-    .then(res => res.json())
-    .then(res => cleanNewsData(res.results))
-    .catch(error => {
-      throw new Error(error);
-    });
+export const getNewsData = async () => {
+  try {
+    const response = await fetch(
+      `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${nytKey}`
+    );
+    if (response.status < 300) {
+      return await response.json();
+    } else {
+      throw new Error('error in getNews');
+    }
+  } catch (error) {
+    throw error;
+  }
 };
 
-export const getWeather = () => {
-  return fetch(
-    `http://api.wunderground.com/api/${wuKey}/conditions/hourly/q/CO/Denver.json`
-  )
-    .then(res => res.json())
-    .then(res => cleanWeatherData(res))
-    .catch(error => {
-      throw new Error(error);
-    });
+export const getWeatherData = async () => {
+  try {
+    const response = await fetch(
+      `http://api.wunderground.com/api/${wuKey}/conditions/hourly/q/CO/Denver.json`
+    );
+    if (response.status < 300) {
+      return await response.json();
+    } else {
+      throw new Error('error in getWeather');
+    }
+  } catch (error) {
+    throw error;
+  }
 };
 
 export const cleanNewsData = results => {
-  return results.map(article => ({
-    title: article.title,
-    byline: article.byline,
-    abstract: article.abstract,
-    thumbnail: article.multimedia[0].url,
-    url: article.url
-  }));
+  return results.map(article => {
+    let thumbnail;
+    if (article.multimedia.length) {
+      thumbnail = {
+        url: article.multimedia[3].url,
+        caption: article.multimedia[3].caption
+      };
+    } else {
+      thumbnail = {
+        url: 'https://avatars1.githubusercontent.com/u/221409?s=200&v=4',
+        caption: 'New York Times'
+      };
+    }
+
+    const articleObj = {
+      title: article.title,
+      abstract: article.abstract,
+      byline: article.byline,
+      thumbnail: thumbnail.url,
+      caption: thumbnail.caption,
+      url: article.url
+    };
+    return articleObj;
+  });
 };
 
-export const cleanWeatherData = response => {
+export const cleanWeatherData = ({ current_observation, hourly_forecast }) => {
   const {
-    current_observation: {
-      display_location,
-      observation_time,
-      temp_f,
-      weather,
-      icon_url
-    },
-    hourly_forecast
-  } = response;
+    observation_location,
+    observation_time,
+    temp_f,
+    weather,
+    icon_url
+  } = current_observation;
   const currentObservation = {
-    location: display_location.city,
+    location: observation_location.city,
     currentTime: observation_time,
     conditions: weather,
     icon: icon_url,
@@ -57,5 +80,5 @@ export const cleanWeatherData = response => {
     hour: hour.FCTTIME.civil
   }));
 
-  return [currentObservation, ...hourlyForecast];
+  return { currentObservation, hourlyForecast };
 };

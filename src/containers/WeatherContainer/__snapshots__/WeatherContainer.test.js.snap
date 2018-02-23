@@ -1,0 +1,299 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherContainer should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    currentObservation={
+        Object {
+            "conditions": "Mostly Cloudy",
+            "currentTime": "Last Updated on February 20, 10:06 AM MST",
+            "icon": "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+            "location": "Capitol Hill, Denver",
+            "temp": 11.8,
+          }
+    }
+    hourlyForecast={
+        Array [
+            Object {
+              "hour": "11:00 AM",
+              "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
+              "pop": "15",
+              "temp": "13",
+            },
+            Object {
+              "hour": "12:00 PM",
+              "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
+              "pop": "15",
+              "temp": "15",
+            },
+            Object {
+              "hour": "1:00 PM",
+              "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
+              "pop": "15",
+              "temp": "17",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Unknown
+          currentObservation={
+                    Object {
+                              "conditions": "Mostly Cloudy",
+                              "currentTime": "Last Updated on February 20, 10:06 AM MST",
+                              "icon": "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+                              "location": "Capitol Hill, Denver",
+                              "temp": 11.8,
+                            }
+          }
+/>,
+        Array [
+          <Unknown
+            hourlyForecast={
+                        Object {
+                                    "hour": "11:00 AM",
+                                    "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
+                                    "pop": "15",
+                                    "temp": "13",
+                                  }
+            }
+/>,
+          <Unknown
+            hourlyForecast={
+                        Object {
+                                    "hour": "12:00 PM",
+                                    "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
+                                    "pop": "15",
+                                    "temp": "15",
+                                  }
+            }
+/>,
+          <Unknown
+            hourlyForecast={
+                        Object {
+                                    "hour": "1:00 PM",
+                                    "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
+                                    "pop": "15",
+                                    "temp": "17",
+                                  }
+            }
+/>,
+        ],
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "currentObservation": Object {
+            "conditions": "Mostly Cloudy",
+            "currentTime": "Last Updated on February 20, 10:06 AM MST",
+            "icon": "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+            "location": "Capitol Hill, Denver",
+            "temp": 11.8,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "function",
+        "props": Object {
+          "hourlyForecast": Object {
+            "hour": "11:00 AM",
+            "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
+            "pop": "15",
+            "temp": "13",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "function",
+        "props": Object {
+          "hourlyForecast": Object {
+            "hour": "12:00 PM",
+            "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
+            "pop": "15",
+            "temp": "15",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "function",
+        "props": Object {
+          "hourlyForecast": Object {
+            "hour": "1:00 PM",
+            "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
+            "pop": "15",
+            "temp": "17",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Unknown
+            currentObservation={
+                        Object {
+                                    "conditions": "Mostly Cloudy",
+                                    "currentTime": "Last Updated on February 20, 10:06 AM MST",
+                                    "icon": "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+                                    "location": "Capitol Hill, Denver",
+                                    "temp": 11.8,
+                                  }
+            }
+/>,
+          Array [
+            <Unknown
+              hourlyForecast={
+                            Object {
+                                          "hour": "11:00 AM",
+                                          "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
+                                          "pop": "15",
+                                          "temp": "13",
+                                        }
+              }
+/>,
+            <Unknown
+              hourlyForecast={
+                            Object {
+                                          "hour": "12:00 PM",
+                                          "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
+                                          "pop": "15",
+                                          "temp": "15",
+                                        }
+              }
+/>,
+            <Unknown
+              hourlyForecast={
+                            Object {
+                                          "hour": "1:00 PM",
+                                          "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
+                                          "pop": "15",
+                                          "temp": "17",
+                                        }
+              }
+/>,
+          ],
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "currentObservation": Object {
+              "conditions": "Mostly Cloudy",
+              "currentTime": "Last Updated on February 20, 10:06 AM MST",
+              "icon": "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+              "location": "Capitol Hill, Denver",
+              "temp": 11.8,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "function",
+          "props": Object {
+            "hourlyForecast": Object {
+              "hour": "11:00 AM",
+              "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
+              "pop": "15",
+              "temp": "13",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "hourlyForecast": Object {
+              "hour": "12:00 PM",
+              "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
+              "pop": "15",
+              "temp": "15",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "function",
+          "props": Object {
+            "hourlyForecast": Object {
+              "hour": "1:00 PM",
+              "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
+              "pop": "15",
+              "temp": "17",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

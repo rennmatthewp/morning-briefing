@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './App.css';
 import { connect } from 'react-redux';
 import { populateNews, populateWeather } from '../../actions';
-import { getNews, getWeather } from '../../helper/apiCalls';
+import {
+  getNewsData,
+  getWeatherData,
+  cleanNewsData,
+  cleanWeatherData
+} from '../../helper/apiCalls';
+import NewsContainer from '../../containers/NewsContainer/NewsContainer';
+//eslint-disable-next-line
+import WeatherContainer from '../../containers/WeatherContainer/WeatherContainer';
 
 export class App extends Component {
   constructor() {
@@ -13,26 +22,48 @@ export class App extends Component {
   }
 
   componentDidMount() {
-    getNews()
-      .then(this.props.populateNews)
-      .catch(error => {
-        this.setState({ errorStatus: error });
-      });
-    getWeather()
-      .then(this.props.populateWeather)
-      .catch(error => {
-        this.setState({ errorStatus: error });
-      });
+    this.getWeather();
+    this.getNews();
   }
 
+  getNews = async () => {
+    try {
+      const newsResponse = await getNewsData();
+      const cleanedNewsData = await cleanNewsData(newsResponse.results);
+      this.props.populateNews(cleanedNewsData);
+    } catch (error) {
+      this.setState({ errorStatus: error });
+    }
+  };
+
+  getWeather = async () => {
+    try {
+      const weatherResponse = await getWeatherData();
+      const cleanedWeatherData = await cleanWeatherData(weatherResponse);
+      this.props.populateWeather(cleanedWeatherData);
+    } catch (error) {
+      this.setState({ errorStatus: error });
+    }
+  };
+
   render() {
-    return <div className="App">Hello, World</div>;
+    return (
+      <div className="App">
+        <WeatherContainer />
+        <NewsContainer />
+      </div>
+    );
   }
 }
 
+App.propTypes = {
+  populateNews: PropTypes.func,
+  populateWeather: PropTypes.func
+};
+
 export const mapDispatchToProps = dispatch => ({
-  populateNews: storiesArray => dispatch(populateNews(storiesArray)),
-  populateWeather: weatherArray => dispatch(populateWeather(weatherArray))
+  populateNews: stories => dispatch(populateNews(stories)),
+  populateWeather: weather => dispatch(populateWeather(weather))
 });
 
 export default connect(null, mapDispatchToProps)(App);
