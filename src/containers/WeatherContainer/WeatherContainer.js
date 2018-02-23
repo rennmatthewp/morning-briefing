@@ -23,8 +23,8 @@ export const WeatherContainer = ({ currentObservation, hourlyForecast }) => {
 };
 
 WeatherContainer.propTypes = {
-  currentObservation: PropTypes.object,
-  hourlyForecast: PropTypes.arrayOf(PropTypes.object)
+  currentObservation: object,
+  hourlyForecast: arrayOf(object)
 };
 
 export const mapStateToProps = state => ({
