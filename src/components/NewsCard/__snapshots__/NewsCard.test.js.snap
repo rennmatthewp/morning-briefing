@@ -1,0 +1,252 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsCard should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    abstract="With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions."
+    byline="By SCOTT SHANE"
+    caption="New York Times"
+    thumbnail="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
+    title="How Unwitting Americans Encountered Russian Operatives Online"
+    url="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <a
+          href="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
+>
+          <img
+                    alt="New York Times"
+                    src="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
+          />
+          <h3>
+                    How Unwitting Americans Encountered Russian Operatives Online
+          </h3>
+</a>,
+        <button>
+          O
+</button>,
+        <h5>
+          By SCOTT SHANE
+</h5>,
+        <p>
+          With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.
+</p>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt="New York Times"
+              src="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
+/>,
+            <h3>
+              How Unwitting Americans Encountered Russian Operatives Online
+</h3>,
+          ],
+          "href": "https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "New York Times",
+              "src": "https://avatars1.githubusercontent.com/u/221409?s=200&v=4",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "How Unwitting Americans Encountered Russian Operatives Online",
+            },
+            "ref": null,
+            "rendered": "How Unwitting Americans Encountered Russian Operatives Online",
+            "type": "h3",
+          },
+        ],
+        "type": "a",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "O",
+        },
+        "ref": null,
+        "rendered": "O",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "By SCOTT SHANE",
+        },
+        "ref": null,
+        "rendered": "By SCOTT SHANE",
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.",
+        },
+        "ref": null,
+        "rendered": "With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.",
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <a
+            href="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
+>
+            <img
+                        alt="New York Times"
+                        src="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
+            />
+            <h3>
+                        How Unwitting Americans Encountered Russian Operatives Online
+            </h3>
+</a>,
+          <button>
+            O
+</button>,
+          <h5>
+            By SCOTT SHANE
+</h5>,
+          <p>
+            With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.
+</p>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt="New York Times"
+                src="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
+/>,
+              <h3>
+                How Unwitting Americans Encountered Russian Operatives Online
+</h3>,
+            ],
+            "href": "https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "New York Times",
+                "src": "https://avatars1.githubusercontent.com/u/221409?s=200&v=4",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "How Unwitting Americans Encountered Russian Operatives Online",
+              },
+              "ref": null,
+              "rendered": "How Unwitting Americans Encountered Russian Operatives Online",
+              "type": "h3",
+            },
+          ],
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "O",
+          },
+          "ref": null,
+          "rendered": "O",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "By SCOTT SHANE",
+          },
+          "ref": null,
+          "rendered": "By SCOTT SHANE",
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.",
+          },
+          "ref": null,
+          "rendered": "With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
