@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const WeatherCard = ({ currentObservation, hourlyForecast }) => {
   if (currentObservation) {
@@ -32,5 +33,21 @@ export const WeatherCard = ({ currentObservation, hourlyForecast }) => {
     );
   }
 
-  return <div>'Loading'</div>
+  return <div>Loading...</div>;
+};
+
+WeatherCard.propTypes = {
+  currentObservation: PropTypes.shape({
+    location: PropTypes.string,
+    currentTime: PropTypes.string,
+    temp: PropTypes.number,
+    conditions: PropTypes.string,
+    icon: PropTypes.string
+  }),
+  hourlyForecast: PropTypes.shape({
+    temp: PropTypes.string,
+    pop: PropTypes.string,
+    icon: PropTypes.string,
+    hour: PropTypes.string
+  })
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { arrayOf, object } from 'prop-types';
 import { connect } from 'react-redux';
 import { WeatherCard } from '../../components/WeatherCard/WeatherCard';
 
@@ -8,7 +8,7 @@ export const WeatherContainer = ({ currentObservation, hourlyForecast }) => {
     ? hourlyForecast.map((hour, index) => (
         <WeatherCard hourlyForecast={hour} key={index} />
       ))
-    : 'Loading';
+    : 'Loading...';
 
   const currentObservationCard = (
     <WeatherCard currentObservation={currentObservation} />
@@ -23,10 +23,8 @@ export const WeatherContainer = ({ currentObservation, hourlyForecast }) => {
 };
 
 WeatherContainer.propTypes = {
-  weather: PropTypes.shape({
-    currentObservation: PropTypes.object,
-    hourlyForecast: PropTypes.arrayOf(PropTypes.object)
-  })
+  currentObservation: object,
+  hourlyForecast: arrayOf(object)
 };
 
 export const mapStateToProps = state => ({
