@@ -21,21 +21,54 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Connect(Component) />,
+        <header>
+          <h1>
+                    Morning Briefing
+          </h1>
+          <Connect(Component) />
+</header>,
         <Connect(NewsContainer) />,
       ],
-      "className": "App",
+      "className": "app",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Morning Briefing
+</h1>,
+            <Connect(Component) />,
+          ],
+        },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Morning Briefing",
+            },
+            "ref": null,
+            "rendered": "Morning Briefing",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "header",
       },
       Object {
         "instance": null,
@@ -56,21 +89,54 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Connect(Component) />,
+          <header>
+            <h1>
+                        Morning Briefing
+            </h1>
+            <Connect(Component) />
+</header>,
           <Connect(NewsContainer) />,
         ],
-        "className": "App",
+        "className": "app",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                Morning Briefing
+</h1>,
+              <Connect(Component) />,
+            ],
+          },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Morning Briefing",
+              },
+              "ref": null,
+              "rendered": "Morning Briefing",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "header",
         },
         Object {
           "instance": null,
