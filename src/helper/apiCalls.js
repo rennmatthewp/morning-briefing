@@ -1,10 +1,10 @@
 /*eslint-disable camelcase, max-len*/
 import { nytKey, wuKey } from './.apiKeys';
 
-export const getNewsData = async () => {
+export const getNewsData = async (section = 'home') => {
   try {
     const response = await fetch(
-      `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${nytKey}`
+      `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=${nytKey}`
     );
     if (response.status < 300) {
       return await response.json();
