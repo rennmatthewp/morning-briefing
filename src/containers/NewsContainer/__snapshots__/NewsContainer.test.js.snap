@@ -40,25 +40,42 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Unknown
-          abstract="With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions."
-          byline="By SCOTT SHANE"
-          caption="New York Times"
-          thumbnail="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
-          title="How Unwitting Americans Encountered Russian Operatives Online"
-          url="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
+          selectSection={[Function]}
 />,
-        <Unknown
-          abstract="Critics say the search giant is squelching competition before it begins. Should the government step in?"
-          byline="By CHARLES DUHIGG"
-          caption="its a photograph"
-          thumbnail="https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-mediumThreeByTwo210.png"
-          title="The Case Against Google"
-          url="https://www.nytimes.com/2018/02/20/magazine/the-case-against-google.html"
+        Array [
+          <Unknown
+            abstract="With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions."
+            byline="By SCOTT SHANE"
+            caption="New York Times"
+            thumbnail="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
+            title="How Unwitting Americans Encountered Russian Operatives Online"
+            url="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
 />,
+          <Unknown
+            abstract="Critics say the search giant is squelching competition before it begins. Should the government step in?"
+            byline="By CHARLES DUHIGG"
+            caption="its a photograph"
+            thumbnail="https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-mediumThreeByTwo210.png"
+            title="The Case Against Google"
+            url="https://www.nytimes.com/2018/02/20/magazine/the-case-against-google.html"
+/>,
+        ],
       ],
+      "className": "news-container",
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "selectSection": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": "How Unwitting Americans Encountered Russian Operatives Online",
@@ -102,25 +119,42 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Unknown
-            abstract="With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions."
-            byline="By SCOTT SHANE"
-            caption="New York Times"
-            thumbnail="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
-            title="How Unwitting Americans Encountered Russian Operatives Online"
-            url="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
+            selectSection={[Function]}
 />,
-          <Unknown
-            abstract="Critics say the search giant is squelching competition before it begins. Should the government step in?"
-            byline="By CHARLES DUHIGG"
-            caption="its a photograph"
-            thumbnail="https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-mediumThreeByTwo210.png"
-            title="The Case Against Google"
-            url="https://www.nytimes.com/2018/02/20/magazine/the-case-against-google.html"
+          Array [
+            <Unknown
+              abstract="With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions."
+              byline="By SCOTT SHANE"
+              caption="New York Times"
+              thumbnail="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
+              title="How Unwitting Americans Encountered Russian Operatives Online"
+              url="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
 />,
+            <Unknown
+              abstract="Critics say the search giant is squelching competition before it begins. Should the government step in?"
+              byline="By CHARLES DUHIGG"
+              caption="its a photograph"
+              thumbnail="https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-mediumThreeByTwo210.png"
+              title="The Case Against Google"
+              url="https://www.nytimes.com/2018/02/20/magazine/the-case-against-google.html"
+/>,
+          ],
         ],
+        "className": "news-container",
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "selectSection": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": "How Unwitting Americans Encountered Russian Operatives Online",
