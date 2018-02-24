@@ -1,0 +1,7 @@
+.weather-container {
+  background-color: #fff;
+  height: 120px;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}

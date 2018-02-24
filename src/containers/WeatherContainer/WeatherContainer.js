@@ -2,6 +2,7 @@ import React from 'react';
 import { arrayOf, object } from 'prop-types';
 import { connect } from 'react-redux';
 import { WeatherCard } from '../../components/WeatherCard/WeatherCard';
+import './WeatherContainer.css';
 
 export const WeatherContainer = ({ currentObservation, hourlyForecast }) => {
   const hourlyForecastCards = hourlyForecast
@@ -15,7 +16,7 @@ export const WeatherContainer = ({ currentObservation, hourlyForecast }) => {
   );
 
   return (
-    <div>
+    <div className="weather-container">
       {currentObservationCard}
       {hourlyForecastCards}
     </div>

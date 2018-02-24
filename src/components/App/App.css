@@ -1,0 +1,19 @@
+.app {
+  background-color: #D4D4D4;
+  margin: 0 auto;
+  padding: 5px 20px;
+}
+
+header {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 1.2;
+  width: 145px;
+}

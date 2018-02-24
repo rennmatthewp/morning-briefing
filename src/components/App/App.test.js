@@ -10,12 +10,12 @@ describe('App', () => {
   beforeEach(() => {
     mockPopulateNews = jest.fn();
     mockPopulateWeather = jest.fn();
-    return renderedApp = shallow(
+    return (renderedApp = shallow(
       <App
         populateNews={mockPopulateNews}
         populateWeather={mockPopulateWeather}
       />
-    );
+    ));
   });
 
   it('should match the snapshot', () => {
@@ -23,7 +23,7 @@ describe('App', () => {
   });
 
   xit('should call getNews in CDM', () => {
-    renderedApp.getNews = jest.fn()
+    renderedApp.getNews = jest.fn();
     renderedApp.instance();
     expect(renderedApp.getNews).toHaveBeenCalled();
   });
@@ -44,5 +44,5 @@ describe('App', () => {
 
     mapped.populateWeather();
     expect(mockDispatch).toHaveBeenCalled();
-  })
+  });
 });
