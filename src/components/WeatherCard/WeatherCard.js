@@ -27,7 +27,14 @@ export const WeatherCard = ({ currentObservation, hourlyForecast }) => {
     return (
       <div className="weather-card hourly">
         <h3>{temp}°F</h3>
-        <h5>{pop}%</h5>
+        <h5>
+          <img
+            src={require('../../assets/drop.svg')}
+            alt="raindrop"
+            className="drop"
+          />
+          {pop}%
+        </h5>
         <img src={icon} alt="weather icon" />
         <h3>{hour}</h3>
       </div>
