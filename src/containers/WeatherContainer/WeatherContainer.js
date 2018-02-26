@@ -6,6 +6,7 @@ import { populateWeather } from '../../actions';
 import { getWeatherData, cleanWeatherData } from '../../helper/apiCalls';
 import { WeatherNav } from '../../components/WeatherNav/WeatherNav';
 import { WeatherCategory } from '../../components/WeatherCategory/WeatherCategory';
+import './WeatherContainer.css';
 
 
 export class WeatherContainer extends Component {
@@ -37,7 +38,7 @@ export class WeatherContainer extends Component {
 
   render() {
     if (this.state.errorStatus) {
-      return <div className="weather-conatiner">Error Fetching Weather</div>;
+      return <div className="weather-container">Error Fetching Weather</div>;
     }
 
     return (

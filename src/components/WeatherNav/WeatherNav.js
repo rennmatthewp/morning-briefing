@@ -5,19 +5,21 @@ import './WeatherNav.css';
 
 export const WeatherNav = ({ selectCategory }) => {
   return (
-    <div>
+    <div className="weather-nav nav">
       <NavLink
         to="/hourly"
         name="hourly"
         onClick={selectCategory}
-        activeClassName="selected">
+        className="nav-link"
+        activeClassName="nav-link selected">
         Hourly
       </NavLink>
       <NavLink
         to="/daily"
         name="daily"
         onClick={selectCategory}
-        activeClassName="selected">
+        className="nav-link"
+        activeClassName="nav-link selected">
         Daily
       </NavLink>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './NewsCard.css';
 
 export const NewsCard = ({
   title,
@@ -10,14 +11,19 @@ export const NewsCard = ({
   caption
 }) => {
   return (
-    <div>
-      <a href={url}>
-        <img src={thumbnail} alt={caption} />
-        <h3>{title}</h3>
-      </a>
-      <button>O</button>
-      <h5>{byline}</h5>
-      <p>{abstract}</p>
+    <div className="news-card">
+      <div className="news-card-image">
+        <a href={url} className="thumbnail">
+          <img src={thumbnail} alt={caption} />
+        </a>
+      </div>
+      <div className="news-card-text">
+        <a href={url}>
+          <h3>{title}</h3>
+        </a>
+        <h5>{byline}</h5>
+        <p>{abstract}</p>
+      </div>
     </div>
   );
 };
