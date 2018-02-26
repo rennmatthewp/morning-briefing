@@ -37,7 +37,7 @@ export class NewsContainer extends Component {
 
   render() {
     if (this.state.errorStatus) {
-      return <div className="news-conatiner">Error Fetching News</div>;
+      return <div className="news-container">Error Fetching News</div>;
     }
 
     return (

@@ -1,7 +1,39 @@
 .weather-card {
-  border: solid 1px black;
   margin-right: 5px;
-  width: 100px;
-  height: 100px;
-  flex: 0 0 auto;  
+  padding: 3px 0;
+  width: 80px;
+  height: 110px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.hourly {
+  justify-content: space-between;
+}
+
+.current {
+  width: 250px;
+  height: 135px;
+  padding-bottom: 0;
+}
+
+.current h3 {
+  margin: 2px 0;
+}
+
+.current h4 {
+  font-size: 18px;
+  margin: 2px 0;
+}
+
+.current p {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.current img {
+  margin-top: 3px;
+}
+

@@ -49,8 +49,8 @@ export const cleanNewsData = results => {
     let thumbnail;
     if (article.multimedia.length) {
       thumbnail = {
-        url: article.multimedia[3].url,
-        caption: article.multimedia[3].caption
+        url: article.multimedia[2].url,
+        caption: article.multimedia[2].caption
       };
     } else {
       thumbnail = {

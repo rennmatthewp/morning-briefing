@@ -16,7 +16,7 @@ export const WeatherCategory = ({ weather }) => {
   );
 
   return (
-    <div className="weather-container">
+    <div className="weather-category">
       {currentObservationCard}
       {hourlyForecastCards}
     </div>

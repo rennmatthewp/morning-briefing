@@ -12,13 +12,14 @@ export const NewsNav = ({ selectSection }) => {
         name={section}
         key={section}
         onClick={selectSection}
-        activeClassName="selected">
+        className="nav-link"
+        activeClassName="nav-link selected">
         {newsSections[section]}
       </NavLink>
     );
   });
 
-  return <div>{sectionButtons}</div>;
+  return <div className="nav news-nav">{sectionButtons}</div>;
 };
 
 NewsNav.propTypes = {
