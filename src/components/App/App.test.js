@@ -30,13 +30,13 @@ describe('App', () => {
 
   xit('should call getWeather in CDM', () => {});
 
-  it('should call the dispatch function when calling a fn from MDTP', () => {
-    const mockDispatch = jest.fn();
-    const mapped = mapDispatchToProps(mockDispatch);
+  // it('should call the dispatch function when calling a fn from MDTP', () => {
+  //   const mockDispatch = jest.fn();
+  //   const mapped = mapDispatchToProps(mockDispatch);
 
-    mapped.populateNews();
-    expect(mockDispatch).toHaveBeenCalled();
-  });
+  //   mapped.populateNews();
+  //   expect(mockDispatch).toHaveBeenCalled();
+  // });
 
   it('should call the dispatch fn when calling a fn from MDTP', () => {
     const mockDispatch = jest.fn();
