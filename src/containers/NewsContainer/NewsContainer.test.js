@@ -8,11 +8,16 @@ import { shallow } from 'enzyme';
 import { expectedNewsObj } from '../../mockData';
 
 describe('NewsContainer', () => {
-  it('should match the snapshot', () => {
-    const mockPopulateNews = jest.fn();
-    const renderedNewsContainer = shallow(
-      <NewsContainer newsStories={expectedNewsObj} />
+  let mockPopulateNews;
+  let renderedNewsContainer;
+  
+  beforeEach(()=> {
+    mockPopulateNews = jest.fn();
+    renderedNewsContainer = shallow(
+      <NewsContainer newsStories={expectedNewsObj} populateNews={mockPopulateNews}/>
     );
+  })
+  it('should match the snapshot', () => {
     expect(renderedNewsContainer).toMatchSnapshot();
   });
 
