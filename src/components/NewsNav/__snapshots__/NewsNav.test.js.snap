@@ -1,0 +1,553 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsNav should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    selectSection={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <NavLink
+          activeClassName="selected"
+          ariaCurrent="true"
+          name="home"
+          onClick={[Function]}
+          to="/home"
+>
+          Home
+</NavLink>,
+        <NavLink
+          activeClassName="selected"
+          ariaCurrent="true"
+          name="world"
+          onClick={[Function]}
+          to="/world"
+>
+          World
+</NavLink>,
+        <NavLink
+          activeClassName="selected"
+          ariaCurrent="true"
+          name="national"
+          onClick={[Function]}
+          to="/national"
+>
+          National
+</NavLink>,
+        <NavLink
+          activeClassName="selected"
+          ariaCurrent="true"
+          name="nyregion"
+          onClick={[Function]}
+          to="/nyregion"
+>
+          NY Region
+</NavLink>,
+        <NavLink
+          activeClassName="selected"
+          ariaCurrent="true"
+          name="politics"
+          onClick={[Function]}
+          to="/politics"
+>
+          Politics
+</NavLink>,
+        <NavLink
+          activeClassName="selected"
+          ariaCurrent="true"
+          name="technology"
+          onClick={[Function]}
+          to="/technology"
+>
+          Technology
+</NavLink>,
+        <NavLink
+          activeClassName="selected"
+          ariaCurrent="true"
+          name="science"
+          onClick={[Function]}
+          to="/science"
+>
+          Science
+</NavLink>,
+        <NavLink
+          activeClassName="selected"
+          ariaCurrent="true"
+          name="business"
+          onClick={[Function]}
+          to="/business"
+>
+          Business
+</NavLink>,
+        <NavLink
+          activeClassName="selected"
+          ariaCurrent="true"
+          name="opinion"
+          onClick={[Function]}
+          to="/opinion"
+>
+          Opinion
+</NavLink>,
+        <NavLink
+          activeClassName="selected"
+          ariaCurrent="true"
+          name="tmagazine"
+          onClick={[Function]}
+          to="/tmagazine"
+>
+          NYT Magazine
+</NavLink>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "home",
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "selected",
+          "ariaCurrent": "true",
+          "children": "Home",
+          "name": "home",
+          "onClick": [Function],
+          "to": "/home",
+        },
+        "ref": null,
+        "rendered": "Home",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "world",
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "selected",
+          "ariaCurrent": "true",
+          "children": "World",
+          "name": "world",
+          "onClick": [Function],
+          "to": "/world",
+        },
+        "ref": null,
+        "rendered": "World",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "national",
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "selected",
+          "ariaCurrent": "true",
+          "children": "National",
+          "name": "national",
+          "onClick": [Function],
+          "to": "/national",
+        },
+        "ref": null,
+        "rendered": "National",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "nyregion",
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "selected",
+          "ariaCurrent": "true",
+          "children": "NY Region",
+          "name": "nyregion",
+          "onClick": [Function],
+          "to": "/nyregion",
+        },
+        "ref": null,
+        "rendered": "NY Region",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "politics",
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "selected",
+          "ariaCurrent": "true",
+          "children": "Politics",
+          "name": "politics",
+          "onClick": [Function],
+          "to": "/politics",
+        },
+        "ref": null,
+        "rendered": "Politics",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "technology",
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "selected",
+          "ariaCurrent": "true",
+          "children": "Technology",
+          "name": "technology",
+          "onClick": [Function],
+          "to": "/technology",
+        },
+        "ref": null,
+        "rendered": "Technology",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "science",
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "selected",
+          "ariaCurrent": "true",
+          "children": "Science",
+          "name": "science",
+          "onClick": [Function],
+          "to": "/science",
+        },
+        "ref": null,
+        "rendered": "Science",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "business",
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "selected",
+          "ariaCurrent": "true",
+          "children": "Business",
+          "name": "business",
+          "onClick": [Function],
+          "to": "/business",
+        },
+        "ref": null,
+        "rendered": "Business",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "opinion",
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "selected",
+          "ariaCurrent": "true",
+          "children": "Opinion",
+          "name": "opinion",
+          "onClick": [Function],
+          "to": "/opinion",
+        },
+        "ref": null,
+        "rendered": "Opinion",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "tmagazine",
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "selected",
+          "ariaCurrent": "true",
+          "children": "NYT Magazine",
+          "name": "tmagazine",
+          "onClick": [Function],
+          "to": "/tmagazine",
+        },
+        "ref": null,
+        "rendered": "NYT Magazine",
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <NavLink
+            activeClassName="selected"
+            ariaCurrent="true"
+            name="home"
+            onClick={[Function]}
+            to="/home"
+>
+            Home
+</NavLink>,
+          <NavLink
+            activeClassName="selected"
+            ariaCurrent="true"
+            name="world"
+            onClick={[Function]}
+            to="/world"
+>
+            World
+</NavLink>,
+          <NavLink
+            activeClassName="selected"
+            ariaCurrent="true"
+            name="national"
+            onClick={[Function]}
+            to="/national"
+>
+            National
+</NavLink>,
+          <NavLink
+            activeClassName="selected"
+            ariaCurrent="true"
+            name="nyregion"
+            onClick={[Function]}
+            to="/nyregion"
+>
+            NY Region
+</NavLink>,
+          <NavLink
+            activeClassName="selected"
+            ariaCurrent="true"
+            name="politics"
+            onClick={[Function]}
+            to="/politics"
+>
+            Politics
+</NavLink>,
+          <NavLink
+            activeClassName="selected"
+            ariaCurrent="true"
+            name="technology"
+            onClick={[Function]}
+            to="/technology"
+>
+            Technology
+</NavLink>,
+          <NavLink
+            activeClassName="selected"
+            ariaCurrent="true"
+            name="science"
+            onClick={[Function]}
+            to="/science"
+>
+            Science
+</NavLink>,
+          <NavLink
+            activeClassName="selected"
+            ariaCurrent="true"
+            name="business"
+            onClick={[Function]}
+            to="/business"
+>
+            Business
+</NavLink>,
+          <NavLink
+            activeClassName="selected"
+            ariaCurrent="true"
+            name="opinion"
+            onClick={[Function]}
+            to="/opinion"
+>
+            Opinion
+</NavLink>,
+          <NavLink
+            activeClassName="selected"
+            ariaCurrent="true"
+            name="tmagazine"
+            onClick={[Function]}
+            to="/tmagazine"
+>
+            NYT Magazine
+</NavLink>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "home",
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "selected",
+            "ariaCurrent": "true",
+            "children": "Home",
+            "name": "home",
+            "onClick": [Function],
+            "to": "/home",
+          },
+          "ref": null,
+          "rendered": "Home",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "world",
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "selected",
+            "ariaCurrent": "true",
+            "children": "World",
+            "name": "world",
+            "onClick": [Function],
+            "to": "/world",
+          },
+          "ref": null,
+          "rendered": "World",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "national",
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "selected",
+            "ariaCurrent": "true",
+            "children": "National",
+            "name": "national",
+            "onClick": [Function],
+            "to": "/national",
+          },
+          "ref": null,
+          "rendered": "National",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "nyregion",
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "selected",
+            "ariaCurrent": "true",
+            "children": "NY Region",
+            "name": "nyregion",
+            "onClick": [Function],
+            "to": "/nyregion",
+          },
+          "ref": null,
+          "rendered": "NY Region",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "politics",
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "selected",
+            "ariaCurrent": "true",
+            "children": "Politics",
+            "name": "politics",
+            "onClick": [Function],
+            "to": "/politics",
+          },
+          "ref": null,
+          "rendered": "Politics",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "technology",
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "selected",
+            "ariaCurrent": "true",
+            "children": "Technology",
+            "name": "technology",
+            "onClick": [Function],
+            "to": "/technology",
+          },
+          "ref": null,
+          "rendered": "Technology",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "science",
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "selected",
+            "ariaCurrent": "true",
+            "children": "Science",
+            "name": "science",
+            "onClick": [Function],
+            "to": "/science",
+          },
+          "ref": null,
+          "rendered": "Science",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "business",
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "selected",
+            "ariaCurrent": "true",
+            "children": "Business",
+            "name": "business",
+            "onClick": [Function],
+            "to": "/business",
+          },
+          "ref": null,
+          "rendered": "Business",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "opinion",
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "selected",
+            "ariaCurrent": "true",
+            "children": "Opinion",
+            "name": "opinion",
+            "onClick": [Function],
+            "to": "/opinion",
+          },
+          "ref": null,
+          "rendered": "Opinion",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "tmagazine",
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "selected",
+            "ariaCurrent": "true",
+            "children": "NYT Magazine",
+            "name": "tmagazine",
+            "onClick": [Function],
+            "to": "/tmagazine",
+          },
+          "ref": null,
+          "rendered": "NYT Magazine",
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
