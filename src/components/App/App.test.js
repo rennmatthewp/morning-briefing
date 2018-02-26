@@ -37,12 +37,4 @@ describe('App', () => {
   //   mapped.populateNews();
   //   expect(mockDispatch).toHaveBeenCalled();
   // });
-
-  it('should call the dispatch fn when calling a fn from MDTP', () => {
-    const mockDispatch = jest.fn();
-    const mapped = mapDispatchToProps(mockDispatch);
-
-    mapped.populateWeather();
-    expect(mockDispatch).toHaveBeenCalled();
-  });
 });
