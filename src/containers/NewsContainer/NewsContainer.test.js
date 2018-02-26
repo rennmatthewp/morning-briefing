@@ -6,7 +6,7 @@ import { expectedNewsObj } from '../../mockData';
 describe('NewsContainer', () => {
   it('should match the snapshot', () => {
     const renderedNewsContainer = shallow(
-      <NewsContainer articles={expectedNewsObj} />
+      <NewsContainer newsStories={expectedNewsObj} />
     );
     expect(renderedNewsContainer).toMatchSnapshot();
   });
@@ -14,6 +14,6 @@ describe('NewsContainer', () => {
   it('should correctly map the store', () => {
     const mapped = mapStateToProps({ newsStories: expectedNewsObj });
 
-    expect(mapped.articles).toEqual(expectedNewsObj);
+    expect(mapped.newsStories).toEqual(expectedNewsObj);
   });
 });
