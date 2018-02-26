@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherNav should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    selectCategory={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <NavLink
+          activeClassName="nav-link selected"
+          ariaCurrent="true"
+          className="nav-link"
+          name="hourly"
+          onClick={[Function]}
+          to="/hourly"
+>
+          Hourly
+</NavLink>,
+        <NavLink
+          activeClassName="nav-link selected"
+          ariaCurrent="true"
+          className="nav-link"
+          name="daily"
+          onClick={[Function]}
+          to="/daily"
+>
+          Daily
+</NavLink>,
+      ],
+      "className": "weather-nav nav",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "nav-link selected",
+          "ariaCurrent": "true",
+          "children": "Hourly",
+          "className": "nav-link",
+          "name": "hourly",
+          "onClick": [Function],
+          "to": "/hourly",
+        },
+        "ref": null,
+        "rendered": "Hourly",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "nav-link selected",
+          "ariaCurrent": "true",
+          "children": "Daily",
+          "className": "nav-link",
+          "name": "daily",
+          "onClick": [Function],
+          "to": "/daily",
+        },
+        "ref": null,
+        "rendered": "Daily",
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <NavLink
+            activeClassName="nav-link selected"
+            ariaCurrent="true"
+            className="nav-link"
+            name="hourly"
+            onClick={[Function]}
+            to="/hourly"
+>
+            Hourly
+</NavLink>,
+          <NavLink
+            activeClassName="nav-link selected"
+            ariaCurrent="true"
+            className="nav-link"
+            name="daily"
+            onClick={[Function]}
+            to="/daily"
+>
+            Daily
+</NavLink>,
+        ],
+        "className": "weather-nav nav",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "nav-link selected",
+            "ariaCurrent": "true",
+            "children": "Hourly",
+            "className": "nav-link",
+            "name": "hourly",
+            "onClick": [Function],
+            "to": "/hourly",
+          },
+          "ref": null,
+          "rendered": "Hourly",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "nav-link selected",
+            "ariaCurrent": "true",
+            "children": "Daily",
+            "className": "nav-link",
+            "name": "daily",
+            "onClick": [Function],
+            "to": "/daily",
+          },
+          "ref": null,
+          "rendered": "Daily",
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

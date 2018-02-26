@@ -19,7 +19,7 @@ ShallowWrapper {
               "abstract": "Critics say the search giant is squelching competition before it begins. Should the government step in?",
               "byline": "By CHARLES DUHIGG",
               "caption": "its a photograph",
-              "thumbnail": "https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-mediumThreeByTwo210.png",
+              "thumbnail": "https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-articleInline.png",
               "title": "The Case Against Google",
               "url": "https://www.nytimes.com/2018/02/20/magazine/the-case-against-google.html",
             },
@@ -51,7 +51,7 @@ ShallowWrapper {
           abstract="Critics say the search giant is squelching competition before it begins. Should the government step in?"
           byline="By CHARLES DUHIGG"
           caption="its a photograph"
-          thumbnail="https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-mediumThreeByTwo210.png"
+          thumbnail="https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-articleInline.png"
           title="The Case Against Google"
           url="https://www.nytimes.com/2018/02/20/magazine/the-case-against-google.html"
 />,
@@ -83,7 +83,7 @@ ShallowWrapper {
           "abstract": "Critics say the search giant is squelching competition before it begins. Should the government step in?",
           "byline": "By CHARLES DUHIGG",
           "caption": "its a photograph",
-          "thumbnail": "https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-mediumThreeByTwo210.png",
+          "thumbnail": "https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-articleInline.png",
           "title": "The Case Against Google",
           "url": "https://www.nytimes.com/2018/02/20/magazine/the-case-against-google.html",
         },
@@ -113,7 +113,7 @@ ShallowWrapper {
             abstract="Critics say the search giant is squelching competition before it begins. Should the government step in?"
             byline="By CHARLES DUHIGG"
             caption="its a photograph"
-            thumbnail="https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-mediumThreeByTwo210.png"
+            thumbnail="https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-articleInline.png"
             title="The Case Against Google"
             url="https://www.nytimes.com/2018/02/20/magazine/the-case-against-google.html"
 />,
@@ -145,7 +145,7 @@ ShallowWrapper {
             "abstract": "Critics say the search giant is squelching competition before it begins. Should the government step in?",
             "byline": "By CHARLES DUHIGG",
             "caption": "its a photograph",
-            "thumbnail": "https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-mediumThreeByTwo210.png",
+            "thumbnail": "https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-articleInline.png",
             "title": "The Case Against Google",
             "url": "https://www.nytimes.com/2018/02/20/magazine/the-case-against-google.html",
           },

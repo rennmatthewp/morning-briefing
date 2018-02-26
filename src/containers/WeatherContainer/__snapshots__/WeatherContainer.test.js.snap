@@ -51,7 +51,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Unknown
-          selectCategory={[Function]}
+          selectCategory={undefined}
 />,
         <Route
           path="/"
@@ -67,7 +67,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "selectCategory": [Function],
+          "selectCategory": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -96,7 +96,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Unknown
-            selectCategory={[Function]}
+            selectCategory={undefined}
 />,
           <Route
             path="/"
@@ -112,7 +112,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "selectCategory": [Function],
+            "selectCategory": undefined,
           },
           "ref": null,
           "rendered": null,

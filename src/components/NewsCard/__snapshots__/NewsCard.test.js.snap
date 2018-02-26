@@ -25,27 +25,38 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <a
-          href="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
+        <div
+          className="news-card-image"
 >
-          <img
-                    alt="New York Times"
-                    src="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
-          />
-          <h3>
-                    How Unwitting Americans Encountered Russian Operatives Online
-          </h3>
-</a>,
-        <button>
-          O
-</button>,
-        <h5>
-          By SCOTT SHANE
-</h5>,
-        <p>
-          With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.
-</p>,
+          <a
+                    className="thumbnail"
+                    href="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
+          >
+                    <img
+                              alt="New York Times"
+                              src="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
+                    />
+          </a>
+</div>,
+        <div
+          className="news-card-text"
+>
+          <a
+                    href="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
+          >
+                    <h3>
+                              How Unwitting Americans Encountered Russian Operatives Online
+                    </h3>
+          </a>
+          <h5>
+                    By SCOTT SHANE
+          </h5>
+          <p>
+                    With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.
+          </p>
+</div>,
       ],
+      "className": "news-card",
     },
     "ref": null,
     "rendered": Array [
@@ -54,20 +65,32 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
+          "children": <a
+            className="thumbnail"
+            href="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
+>
             <img
+                        alt="New York Times"
+                        src="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
+            />
+</a>,
+          "className": "news-card-image",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
               alt="New York Times"
               src="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
 />,
-            <h3>
-              How Unwitting Americans Encountered Russian Operatives Online
-</h3>,
-          ],
-          "href": "https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
+            "className": "thumbnail",
+            "href": "https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html",
+          },
+          "ref": null,
+          "rendered": Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
@@ -79,52 +102,82 @@ ShallowWrapper {
             "rendered": null,
             "type": "img",
           },
+          "type": "a",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <a
+              href="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
+>
+              <h3>
+                            How Unwitting Americans Encountered Russian Operatives Online
+              </h3>
+</a>,
+            <h5>
+              By SCOTT SHANE
+</h5>,
+            <p>
+              With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.
+</p>,
+          ],
+          "className": "news-card-text",
+        },
+        "ref": null,
+        "rendered": Array [
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "How Unwitting Americans Encountered Russian Operatives Online",
+              "children": <h3>
+                How Unwitting Americans Encountered Russian Operatives Online
+</h3>,
+              "href": "https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html",
             },
             "ref": null,
-            "rendered": "How Unwitting Americans Encountered Russian Operatives Online",
-            "type": "h3",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "How Unwitting Americans Encountered Russian Operatives Online",
+              },
+              "ref": null,
+              "rendered": "How Unwitting Americans Encountered Russian Operatives Online",
+              "type": "h3",
+            },
+            "type": "a",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "By SCOTT SHANE",
+            },
+            "ref": null,
+            "rendered": "By SCOTT SHANE",
+            "type": "h5",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.",
+            },
+            "ref": null,
+            "rendered": "With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.",
+            "type": "p",
           },
         ],
-        "type": "a",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "O",
-        },
-        "ref": null,
-        "rendered": "O",
-        "type": "button",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "By SCOTT SHANE",
-        },
-        "ref": null,
-        "rendered": "By SCOTT SHANE",
-        "type": "h5",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.",
-        },
-        "ref": null,
-        "rendered": "With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.",
-        "type": "p",
+        "type": "div",
       },
     ],
     "type": "div",
@@ -136,27 +189,38 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <a
-            href="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
+          <div
+            className="news-card-image"
 >
-            <img
-                        alt="New York Times"
-                        src="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
-            />
-            <h3>
-                        How Unwitting Americans Encountered Russian Operatives Online
-            </h3>
-</a>,
-          <button>
-            O
-</button>,
-          <h5>
-            By SCOTT SHANE
-</h5>,
-          <p>
-            With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.
-</p>,
+            <a
+                        className="thumbnail"
+                        href="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
+            >
+                        <img
+                                    alt="New York Times"
+                                    src="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
+                        />
+            </a>
+</div>,
+          <div
+            className="news-card-text"
+>
+            <a
+                        href="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
+            >
+                        <h3>
+                                    How Unwitting Americans Encountered Russian Operatives Online
+                        </h3>
+            </a>
+            <h5>
+                        By SCOTT SHANE
+            </h5>
+            <p>
+                        With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.
+            </p>
+</div>,
         ],
+        "className": "news-card",
       },
       "ref": null,
       "rendered": Array [
@@ -165,20 +229,32 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
+            "children": <a
+              className="thumbnail"
+              href="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
+>
               <img
+                            alt="New York Times"
+                            src="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
+              />
+</a>,
+            "className": "news-card-image",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
                 alt="New York Times"
                 src="https://avatars1.githubusercontent.com/u/221409?s=200&v=4"
 />,
-              <h3>
-                How Unwitting Americans Encountered Russian Operatives Online
-</h3>,
-            ],
-            "href": "https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
+              "className": "thumbnail",
+              "href": "https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html",
+            },
+            "ref": null,
+            "rendered": Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
@@ -190,52 +266,82 @@ ShallowWrapper {
               "rendered": null,
               "type": "img",
             },
+            "type": "a",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <a
+                href="https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html"
+>
+                <h3>
+                                How Unwitting Americans Encountered Russian Operatives Online
+                </h3>
+</a>,
+              <h5>
+                By SCOTT SHANE
+</h5>,
+              <p>
+                With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.
+</p>,
+            ],
+            "className": "news-card-text",
+          },
+          "ref": null,
+          "rendered": Array [
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "How Unwitting Americans Encountered Russian Operatives Online",
+                "children": <h3>
+                  How Unwitting Americans Encountered Russian Operatives Online
+</h3>,
+                "href": "https://www.nytimes.com/2018/02/18/us/politics/russian-operatives-facebook-twitter.html",
               },
               "ref": null,
-              "rendered": "How Unwitting Americans Encountered Russian Operatives Online",
-              "type": "h3",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "How Unwitting Americans Encountered Russian Operatives Online",
+                },
+                "ref": null,
+                "rendered": "How Unwitting Americans Encountered Russian Operatives Online",
+                "type": "h3",
+              },
+              "type": "a",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "By SCOTT SHANE",
+              },
+              "ref": null,
+              "rendered": "By SCOTT SHANE",
+              "type": "h5",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.",
+              },
+              "ref": null,
+              "rendered": "With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.",
+              "type": "p",
             },
           ],
-          "type": "a",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "O",
-          },
-          "ref": null,
-          "rendered": "O",
-          "type": "button",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "By SCOTT SHANE",
-          },
-          "ref": null,
-          "rendered": "By SCOTT SHANE",
-          "type": "h5",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.",
-          },
-          "ref": null,
-          "rendered": "With imperfect English and tireless posting on Facebook and Twitter, Russian trolls summoned Americans to rallies, praised Donald J. Trump and played on political divisions.",
-          "type": "p",
+          "type": "div",
         },
       ],
       "type": "div",
