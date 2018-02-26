@@ -10,13 +10,16 @@ import { expectedNewsObj } from '../../mockData';
 describe('NewsContainer', () => {
   let mockPopulateNews;
   let renderedNewsContainer;
-  
-  beforeEach(()=> {
+
+  beforeEach(() => {
     mockPopulateNews = jest.fn();
     renderedNewsContainer = shallow(
-      <NewsContainer newsStories={expectedNewsObj} populateNews={mockPopulateNews}/>
+      <NewsContainer
+        newsStories={expectedNewsObj}
+        populateNews={mockPopulateNews}
+      />
     );
-  })
+  });
   it('should match the snapshot', () => {
     expect(renderedNewsContainer).toMatchSnapshot();
   });

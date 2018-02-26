@@ -9,14 +9,17 @@ import { expectedWeatherObj } from '../../mockData';
 
 describe('WeatherContainer', () => {
   let renderedWeatherContainer;
-  let mockPopulateWeather; 
+  let mockPopulateWeather;
 
   beforeEach(() => {
     mockPopulateWeather = jest.fn();
     renderedWeatherContainer = shallow(
-      <WeatherContainer weather={expectedWeatherObj} populateWeather={mockPopulateWeather}/>
+      <WeatherContainer
+        weather={expectedWeatherObj}
+        populateWeather={mockPopulateWeather}
+      />
     );
-  })
+  });
 
   it('should match the snapshot', () => {
     expect(renderedWeatherContainer).toMatchSnapshot();
@@ -26,7 +29,7 @@ describe('WeatherContainer', () => {
     const mapped = mapStateToProps({
       weather: expectedWeatherObj
     });
-    
+
     expect(mapped.weather).toEqual(expectedWeatherObj);
   });
 
