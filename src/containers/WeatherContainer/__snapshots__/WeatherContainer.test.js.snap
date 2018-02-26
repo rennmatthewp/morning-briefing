@@ -4,7 +4,7 @@ exports[`WeatherContainer should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown
+  Symbol(enzyme.__unrendered__): <WeatherContainer
     currentObservation={
         Object {
             "conditions": "Mostly Cloudy",
@@ -51,48 +51,12 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Unknown
-          currentObservation={
-                    Object {
-                              "conditions": "Mostly Cloudy",
-                              "currentTime": "Last Updated on February 20, 10:06 AM MST",
-                              "icon": "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
-                              "location": "Capitol Hill, Denver",
-                              "temp": 11.8,
-                            }
-          }
+          selectCategory={[Function]}
 />,
-        Array [
-          <Unknown
-            hourlyForecast={
-                        Object {
-                                    "hour": "11:00 AM",
-                                    "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
-                                    "pop": "15",
-                                    "temp": "13",
-                                  }
-            }
+        <Route
+          path="/"
+          render={[Function]}
 />,
-          <Unknown
-            hourlyForecast={
-                        Object {
-                                    "hour": "12:00 PM",
-                                    "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
-                                    "pop": "15",
-                                    "temp": "15",
-                                  }
-            }
-/>,
-          <Unknown
-            hourlyForecast={
-                        Object {
-                                    "hour": "1:00 PM",
-                                    "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
-                                    "pop": "15",
-                                    "temp": "17",
-                                  }
-            }
-/>,
-        ],
       ],
       "className": "weather-container",
     },
@@ -103,13 +67,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "currentObservation": Object {
-            "conditions": "Mostly Cloudy",
-            "currentTime": "Last Updated on February 20, 10:06 AM MST",
-            "icon": "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
-            "location": "Capitol Hill, Denver",
-            "temp": 11.8,
-          },
+          "selectCategory": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -117,47 +75,11 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "0",
-        "nodeType": "function",
+        "key": undefined,
+        "nodeType": "class",
         "props": Object {
-          "hourlyForecast": Object {
-            "hour": "11:00 AM",
-            "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
-            "pop": "15",
-            "temp": "13",
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "1",
-        "nodeType": "function",
-        "props": Object {
-          "hourlyForecast": Object {
-            "hour": "12:00 PM",
-            "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
-            "pop": "15",
-            "temp": "15",
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "2",
-        "nodeType": "function",
-        "props": Object {
-          "hourlyForecast": Object {
-            "hour": "1:00 PM",
-            "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
-            "pop": "15",
-            "temp": "17",
-          },
+          "path": "/",
+          "render": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -174,48 +96,12 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Unknown
-            currentObservation={
-                        Object {
-                                    "conditions": "Mostly Cloudy",
-                                    "currentTime": "Last Updated on February 20, 10:06 AM MST",
-                                    "icon": "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
-                                    "location": "Capitol Hill, Denver",
-                                    "temp": 11.8,
-                                  }
-            }
+            selectCategory={[Function]}
 />,
-          Array [
-            <Unknown
-              hourlyForecast={
-                            Object {
-                                          "hour": "11:00 AM",
-                                          "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
-                                          "pop": "15",
-                                          "temp": "13",
-                                        }
-              }
+          <Route
+            path="/"
+            render={[Function]}
 />,
-            <Unknown
-              hourlyForecast={
-                            Object {
-                                          "hour": "12:00 PM",
-                                          "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
-                                          "pop": "15",
-                                          "temp": "15",
-                                        }
-              }
-/>,
-            <Unknown
-              hourlyForecast={
-                            Object {
-                                          "hour": "1:00 PM",
-                                          "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
-                                          "pop": "15",
-                                          "temp": "17",
-                                        }
-              }
-/>,
-          ],
         ],
         "className": "weather-container",
       },
@@ -226,13 +112,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "currentObservation": Object {
-              "conditions": "Mostly Cloudy",
-              "currentTime": "Last Updated on February 20, 10:06 AM MST",
-              "icon": "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
-              "location": "Capitol Hill, Denver",
-              "temp": 11.8,
-            },
+            "selectCategory": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -240,47 +120,11 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "0",
-          "nodeType": "function",
+          "key": undefined,
+          "nodeType": "class",
           "props": Object {
-            "hourlyForecast": Object {
-              "hour": "11:00 AM",
-              "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
-              "pop": "15",
-              "temp": "13",
-            },
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": "1",
-          "nodeType": "function",
-          "props": Object {
-            "hourlyForecast": Object {
-              "hour": "12:00 PM",
-              "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
-              "pop": "15",
-              "temp": "15",
-            },
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": "2",
-          "nodeType": "function",
-          "props": Object {
-            "hourlyForecast": Object {
-              "hour": "1:00 PM",
-              "icon": "http://icons.wxug.com/i/c/k/cloudy.gif",
-              "pop": "15",
-              "temp": "17",
-            },
+            "path": "/",
+            "render": [Function],
           },
           "ref": null,
           "rendered": null,
