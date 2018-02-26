@@ -1,6 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { WeatherContainer, mapStateToProps } from './WeatherContainer';
+import {
+  WeatherContainer,
+  mapStateToProps,
+  mapDispatchToProps
+} from './WeatherContainer';
 import { expectedWeatherObj } from '../../mockData';
 
 describe('WeatherContainer', () => {
@@ -15,10 +19,15 @@ describe('WeatherContainer', () => {
     const mapped = mapStateToProps({
       weather: expectedWeatherObj
     });
+    
+    expect(mapped.weather).toEqual(expectedWeatherObj);
+  });
 
-    expect(mapped.currentObservation).toEqual(
-      expectedWeatherObj.currentObservation
-    );
-    expect(mapped.hourlyForecast).toEqual(expectedWeatherObj.hourlyForecast);
+  it('should call the dispatch fn when calling a fn from MDTP', () => {
+    const mockDispatch = jest.fn();
+    const mapped = mapDispatchToProps(mockDispatch);
+
+    mapped.populateWeather();
+    expect(mockDispatch).toHaveBeenCalled();
   });
 });
