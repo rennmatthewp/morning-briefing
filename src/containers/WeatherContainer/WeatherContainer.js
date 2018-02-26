@@ -16,7 +16,6 @@ export class WeatherContainer extends Component {
       errorStatus: null
     };
   }
-
   componentDidMount() {
     this.getWeather();
   }
