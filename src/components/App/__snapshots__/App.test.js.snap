@@ -25,9 +25,15 @@ ShallowWrapper {
           <h1>
                     Morning Briefing
           </h1>
-          <Connect(Component) />
+          <Route
+                    component={[Function]}
+                    path="/"
+          />
 </header>,
-        <Connect(NewsContainer) />,
+        <Route
+          component={[Function]}
+          path="/"
+/>,
       ],
       "className": "app",
     },
@@ -42,7 +48,10 @@ ShallowWrapper {
             <h1>
               Morning Briefing
 </h1>,
-            <Connect(Component) />,
+            <Route
+              component={[Function]}
+              path="/"
+/>,
           ],
         },
         "ref": null,
@@ -62,7 +71,10 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
-            "props": Object {},
+            "props": Object {
+              "component": [Function],
+              "path": "/",
+            },
             "ref": null,
             "rendered": null,
             "type": [Function],
@@ -74,7 +86,10 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "component": [Function],
+          "path": "/",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -93,9 +108,15 @@ ShallowWrapper {
             <h1>
                         Morning Briefing
             </h1>
-            <Connect(Component) />
+            <Route
+                        component={[Function]}
+                        path="/"
+            />
 </header>,
-          <Connect(NewsContainer) />,
+          <Route
+            component={[Function]}
+            path="/"
+/>,
         ],
         "className": "app",
       },
@@ -110,7 +131,10 @@ ShallowWrapper {
               <h1>
                 Morning Briefing
 </h1>,
-              <Connect(Component) />,
+              <Route
+                component={[Function]}
+                path="/"
+/>,
             ],
           },
           "ref": null,
@@ -130,7 +154,10 @@ ShallowWrapper {
               "instance": null,
               "key": undefined,
               "nodeType": "class",
-              "props": Object {},
+              "props": Object {
+                "component": [Function],
+                "path": "/",
+              },
               "ref": null,
               "rendered": null,
               "type": [Function],
@@ -142,7 +169,10 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "component": [Function],
+            "path": "/",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

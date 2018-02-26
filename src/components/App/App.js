@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { populateWeather } from '../../actions';
@@ -35,9 +36,9 @@ export class App extends Component {
       <div className="app">
         <header>
           <h1>Morning Briefing</h1>
-          <WeatherContainer />
+          <Route path="/" component={WeatherContainer} />
         </header>
-        <NewsContainer />
+        <Route path="/" component={NewsContainer} />
       </div>
     );
   }
@@ -51,4 +52,4 @@ export const mapDispatchToProps = dispatch => ({
   populateWeather: weather => dispatch(populateWeather(weather))
 });
 
-export default connect(null, mapDispatchToProps)(App);
+export default withRouter(connect(null, mapDispatchToProps)(App));
