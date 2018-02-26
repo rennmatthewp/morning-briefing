@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
+import { Route, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import './App.css';
 import { connect } from 'react-redux';
-import { populateNews, populateWeather } from '../../actions';
-import {
-  getNewsData,
-  getWeatherData,
-  cleanNewsData,
-  cleanWeatherData
-} from '../../helper/apiCalls';
+import { populateWeather } from '../../actions';
+import { getWeatherData, cleanWeatherData } from '../../helper/apiCalls';
 import NewsContainer from '../../containers/NewsContainer/NewsContainer';
 //eslint-disable-next-line
 import WeatherContainer from '../../containers/WeatherContainer/WeatherContainer';
+import './App.css';
 
 export class App extends Component {
   constructor() {
@@ -23,18 +19,7 @@ export class App extends Component {
 
   componentDidMount() {
     this.getWeather();
-    this.getNews();
   }
-
-  getNews = async () => {
-    try {
-      const newsResponse = await getNewsData();
-      const cleanedNewsData = await cleanNewsData(newsResponse.results);
-      this.props.populateNews(cleanedNewsData);
-    } catch (error) {
-      this.setState({ errorStatus: error });
-    }
-  };
 
   getWeather = async () => {
     try {
@@ -48,22 +33,23 @@ export class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <WeatherContainer />
-        <NewsContainer />
+      <div className="app">
+        <header>
+          <h1>Morning Briefing</h1>
+          <Route path="/" component={WeatherContainer} />
+        </header>
+        <Route path="/" component={NewsContainer} />
       </div>
     );
   }
 }
 
 App.propTypes = {
-  populateNews: PropTypes.func,
   populateWeather: PropTypes.func
 };
 
 export const mapDispatchToProps = dispatch => ({
-  populateNews: stories => dispatch(populateNews(stories)),
   populateWeather: weather => dispatch(populateWeather(weather))
 });
 
-export default connect(null, mapDispatchToProps)(App);
+export default withRouter(connect(null, mapDispatchToProps)(App));

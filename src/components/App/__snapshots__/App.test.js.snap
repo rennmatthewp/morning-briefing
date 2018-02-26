@@ -21,27 +21,75 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Connect(Component) />,
-        <Connect(NewsContainer) />,
+        <header>
+          <h1>
+                    Morning Briefing
+          </h1>
+          <Route
+                    component={[Function]}
+                    path="/"
+          />
+</header>,
+        <Route
+          component={[Function]}
+          path="/"
+/>,
       ],
-      "className": "App",
+      "className": "app",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Morning Briefing
+</h1>,
+            <Route
+              component={[Function]}
+              path="/"
+/>,
+          ],
+        },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Morning Briefing",
+            },
+            "ref": null,
+            "rendered": "Morning Briefing",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "header",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "component": [Function],
+          "path": "/",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -56,27 +104,75 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Connect(Component) />,
-          <Connect(NewsContainer) />,
+          <header>
+            <h1>
+                        Morning Briefing
+            </h1>
+            <Route
+                        component={[Function]}
+                        path="/"
+            />
+</header>,
+          <Route
+            component={[Function]}
+            path="/"
+/>,
         ],
-        "className": "App",
+        "className": "app",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                Morning Briefing
+</h1>,
+              <Route
+                component={[Function]}
+                path="/"
+/>,
+            ],
+          },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Morning Briefing",
+              },
+              "ref": null,
+              "rendered": "Morning Briefing",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "header",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "component": [Function],
+            "path": "/",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

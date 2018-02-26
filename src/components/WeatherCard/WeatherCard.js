@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './WeatherCard.css';
 
 export const WeatherCard = ({ currentObservation, hourlyForecast }) => {
   if (currentObservation) {
@@ -11,7 +12,7 @@ export const WeatherCard = ({ currentObservation, hourlyForecast }) => {
       icon
     } = currentObservation;
     return (
-      <div>
+      <div className="weather-card">
         <h3>{location}</h3>
         <p>{currentTime}</p>
         <h4>{temp}</h4>
@@ -24,8 +25,8 @@ export const WeatherCard = ({ currentObservation, hourlyForecast }) => {
   if (hourlyForecast) {
     const { temp, pop, icon, hour } = hourlyForecast;
     return (
-      <div>
-        <h3>{temp}</h3>
+      <div className="weather-card">
+        <h3>{temp}°F</h3>
         <h5>{pop}%</h5>
         <img src={icon} alt="weather icon" />
         <h3>{hour}</h3>
@@ -33,7 +34,7 @@ export const WeatherCard = ({ currentObservation, hourlyForecast }) => {
     );
   }
 
-  return <div>Loading...</div>;
+  return <div className="weather-card">Loading...</div>;
 };
 
 WeatherCard.propTypes = {

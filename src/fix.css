@@ -4,6 +4,7 @@
  * https://github.com/jaydenseric/Fix
 */
 html {
+  box-sizing: border-box;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -14,6 +15,7 @@ body {
   margin: 0;
   line-height: 1;
   font-family: sans-serif;
+  background-color: #D4D4D4
 }
 iframe {
   border: 0;

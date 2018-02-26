@@ -94,6 +94,7 @@ ShallowWrapper {
 />,
         ],
       ],
+      "className": "weather-container",
     },
     "ref": null,
     "rendered": Array [
@@ -216,6 +217,7 @@ ShallowWrapper {
 />,
           ],
         ],
+        "className": "weather-container",
       },
       "ref": null,
       "rendered": Array [

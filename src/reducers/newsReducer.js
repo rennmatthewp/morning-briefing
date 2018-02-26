@@ -1,7 +1,7 @@
 export const newsReducer = (state = [], action) => {
   switch (action.type) {
     case 'POPULATE_NEWS':
-      return [...state, ...action.storiesArray];
+      return action.storiesArray;
     default:
       return state;
   }

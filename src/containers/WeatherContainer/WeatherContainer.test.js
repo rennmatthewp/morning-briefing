@@ -16,7 +16,9 @@ describe('WeatherContainer', () => {
       weather: expectedWeatherObj
     });
 
-    expect(mapped.currentObservation).toEqual(expectedWeatherObj.currentObservation);
+    expect(mapped.currentObservation).toEqual(
+      expectedWeatherObj.currentObservation
+    );
     expect(mapped.hourlyForecast).toEqual(expectedWeatherObj.hourlyForecast);
   });
 });
