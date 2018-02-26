@@ -43,7 +43,12 @@ export class NewsContainer extends Component {
     return (
       <div className="news-container">
         <NewsNav selectSection={this.selectSection} />
-        <NewsSection newsStories={this.props.newsStories} />
+        <Route
+          path="/:section"
+          render={() => (
+            <NewsSection newsStories={this.props.newsStories} />
+          )}
+        />
       </div>
     );
   }
