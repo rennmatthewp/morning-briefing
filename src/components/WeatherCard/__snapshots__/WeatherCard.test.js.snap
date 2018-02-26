@@ -24,6 +24,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": "Loading...",
+      "className": "weather-card",
     },
     "ref": null,
     "rendered": "Loading...",
@@ -36,6 +37,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": "Loading...",
+        "className": "weather-card",
       },
       "ref": null,
       "rendered": "Loading...",
@@ -75,6 +77,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": "Loading...",
+      "className": "weather-card",
     },
     "ref": null,
     "rendered": "Loading...",
@@ -87,6 +90,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": "Loading...",
+        "className": "weather-card",
       },
       "ref": null,
       "rendered": "Loading...",
