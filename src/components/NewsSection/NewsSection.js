@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NewsCard } from '../NewsCard/NewsCard';
 
-export const NewsSection = ({ newsStories }) => {
+export const NewsSection = ({ newsStories, match }) => {
   const articles = newsStories
     ? newsStories.map(article => <NewsCard key={article.title} {...article} />)
     : 'Loading...';
