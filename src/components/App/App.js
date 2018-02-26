@@ -6,14 +6,6 @@ import WeatherContainer from '../../containers/WeatherContainer/WeatherContainer
 import './App.css';
 
 export class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      errorStatus: null
-    };
-  }
-
-
   render() {
     return (
       <div className="app">
