@@ -12,10 +12,10 @@ export const WeatherCard = ({ currentObservation, hourlyForecast }) => {
       icon
     } = currentObservation;
     return (
-      <div className="weather-card">
+      <div className="weather-card current">
         <h3>{location}</h3>
         <p>{currentTime}</p>
-        <h4>{temp}</h4>
+        <h4>{temp}°F</h4>
         <h4>{conditions}</h4>
         <img src={icon} alt="weather icon" />
       </div>
@@ -25,7 +25,7 @@ export const WeatherCard = ({ currentObservation, hourlyForecast }) => {
   if (hourlyForecast) {
     const { temp, pop, icon, hour } = hourlyForecast;
     return (
-      <div className="weather-card">
+      <div className="weather-card hourly">
         <h3>{temp}°F</h3>
         <h5>{pop}%</h5>
         <img src={icon} alt="weather icon" />
@@ -34,7 +34,7 @@ export const WeatherCard = ({ currentObservation, hourlyForecast }) => {
     );
   }
 
-  return <div className="weather-card">Loading...</div>;
+  return <div className="weather-card">Loading Weather Data...</div>;
 };
 
 WeatherCard.propTypes = {

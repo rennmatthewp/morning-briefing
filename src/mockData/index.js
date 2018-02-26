@@ -148,7 +148,7 @@ export const expectedNewsObj = [
       'https://www.nytimes.com/2018/02/20/magazine/the-case-against-google.html',
     byline: 'By CHARLES DUHIGG',
     thumbnail:
-      'https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-mediumThreeByTwo210.png',
+      'https://static01.nyt.com/images/2018/02/25/magazine/25mag-google4-cov/25mag-google4-cov-articleInline.png',
     caption: 'its a photograph'
   }
 ];

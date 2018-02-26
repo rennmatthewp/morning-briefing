@@ -1,36 +1,63 @@
-import React from 'react';
-import { arrayOf, object } from 'prop-types';
+import React, { Component } from 'react';
+import { object, func } from 'prop-types';
 import { connect } from 'react-redux';
-import { WeatherCard } from '../../components/WeatherCard/WeatherCard';
+import { Route } from 'react-router-dom';
+import { populateWeather } from '../../actions';
+import { getWeatherData, cleanWeatherData } from '../../helper/apiCalls';
+import { WeatherNav } from '../../components/WeatherNav/WeatherNav';
+//eslint-disable-next-line
+import { WeatherCategory } from '../../components/WeatherCategory/WeatherCategory';
 import './WeatherContainer.css';
 
-export const WeatherContainer = ({ currentObservation, hourlyForecast }) => {
-  const hourlyForecastCards = hourlyForecast
-    ? hourlyForecast.map((hour, index) => (
-        <WeatherCard hourlyForecast={hour} key={index} />
-      ))
-    : 'Loading...';
+export class WeatherContainer extends Component {
+  constructor() {
+    super();
+    this.state = {
+      errorStatus: null
+    };
+  }
+  componentDidMount() {
+    this.getWeather();
+  }
 
-  const currentObservationCard = (
-    <WeatherCard currentObservation={currentObservation} />
-  );
+  getWeather = async () => {
+    try {
+      const weatherResponse = await getWeatherData();
+      const cleanedWeatherData = await cleanWeatherData(weatherResponse);
+      this.props.populateWeather(cleanedWeatherData);
+    } catch (error) {
+      this.setState({ errorStatus: error });
+    }
+  };
 
-  return (
-    <div className="weather-container">
-      {currentObservationCard}
-      {hourlyForecastCards}
-    </div>
-  );
-};
+  render() {
+    if (this.state.errorStatus) {
+      return <div className="weather-container">Error Fetching Weather</div>;
+    }
+
+    return (
+      <div className="weather-container">
+        <WeatherNav selectCategory={this.selectCategory} />
+        <Route
+          path="/"
+          render={() => <WeatherCategory weather={this.props.weather} />}
+        />
+      </div>
+    );
+  }
+}
 
 WeatherContainer.propTypes = {
-  currentObservation: object,
-  hourlyForecast: arrayOf(object)
+  weather: object,
+  populateWeather: func
 };
 
 export const mapStateToProps = state => ({
-  currentObservation: state.weather.currentObservation,
-  hourlyForecast: state.weather.hourlyForecast
+  weather: state.weather
 });
 
-export default connect(mapStateToProps, null)(WeatherContainer);
+export const mapDispatchToProps = dispatch => ({
+  populateWeather: weather => dispatch(populateWeather(weather))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(WeatherContainer);

@@ -13,9 +13,15 @@
   width: fit-content;
   height: 20px;
   padding: 3px 5px 0;
+  margin: 5px auto;
 }
 
-.news-nav {
-  border-bottom: 1px solid #000;
-  margin-bottom: 5px;
+.weather-nav {
+  width: 125px;
+}
+
+.selected {
+  background-color: #d1d1d1;
+  font-weight: 900;
+  border: solid .5px #000;
 }

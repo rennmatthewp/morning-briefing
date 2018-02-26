@@ -1,8 +1,4 @@
 .weather-container {
   background-color: #fff;
-  height: 120px;
-  min-width: 650px;
-  display: inline-flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  height: 170px;
 }
