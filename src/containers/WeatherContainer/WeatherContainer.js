@@ -52,9 +52,7 @@ WeatherContainer.propTypes = {
   populateWeather: func
 };
 
-export const mapStateToProps = state => ({
-  weather: state.weather
-});
+export const mapStateToProps = ({ weather }) => ({weather});
 
 export const mapDispatchToProps = dispatch => ({
   populateWeather: weather => dispatch(populateWeather(weather))
