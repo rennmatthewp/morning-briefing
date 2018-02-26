@@ -1,6 +1,19 @@
 /*eslint-disable camelcase, max-len*/
 import { nytKey, wuKey } from './.apiKeys';
 
+export const newsSections = {
+  home: 'Home',
+  world: 'World',
+  national: 'National',
+  nyregion: 'NY Region',
+  politics: 'Politics',
+  technology: 'Technology',
+  science: 'Science',
+  business: 'Business',
+  opinion: 'Opinion',
+  tmagazine: 'NYT Magazine'
+};
+
 export const getNewsData = async (section = 'home') => {
   try {
     const response = await fetch(
