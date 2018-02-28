@@ -10,16 +10,14 @@ export const WeatherNav = ({ selectCategory }) => {
         to="/hourly"
         name="hourly"
         onClick={selectCategory}
-        className="nav-link"
-        activeClassName="nav-link selected">
+        className="nav-link">
         Hourly
       </NavLink>
       <NavLink
         to="/daily"
         name="daily"
         onClick={selectCategory}
-        className="nav-link"
-        activeClassName="nav-link selected">
+        className="nav-link">
         Daily
       </NavLink>
     </div>
