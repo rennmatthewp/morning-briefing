@@ -12,8 +12,7 @@ export const NewsNav = ({ selectSection }) => {
         name={section}
         key={section}
         onClick={selectSection}
-        className="nav-link"
-        activeClassName="nav-link selected">
+        className="nav-link">
         {newsSections[section]}
       </NavLink>
     );
