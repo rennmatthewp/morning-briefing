@@ -56,6 +56,7 @@ ShallowWrapper {
           url="https://www.nytimes.com/2018/02/20/magazine/the-case-against-google.html"
 />,
       ],
+      "className": "news-section",
     },
     "ref": null,
     "rendered": Array [
@@ -118,6 +119,7 @@ ShallowWrapper {
             url="https://www.nytimes.com/2018/02/20/magazine/the-case-against-google.html"
 />,
         ],
+        "className": "news-section",
       },
       "ref": null,
       "rendered": Array [

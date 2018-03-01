@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Route, withRouter } from 'react-router-dom';
-import { arrayOf, object, func } from 'prop-types';
+import { arrayOf, object, func, string } from 'prop-types';
 import { connect } from 'react-redux';
 import { NewsNav } from '../../components/NewsNav/NewsNav';
 import { NewsSection } from '../../components/NewsSection/NewsSection';
@@ -42,13 +41,11 @@ export class NewsContainer extends Component {
 
     return (
       <div className="news-container">
-        <NewsNav selectSection={this.selectSection} />
-        <Route
-          path="/:section"
-          render={() => (
-            <NewsSection newsStories={this.props.newsStories} />
-          )}
+        <NewsNav
+          selectSection={this.selectSection}
+          category={this.props.category}
         />
+        <NewsSection newsStories={this.props.newsStories} />
       </div>
     );
   }
@@ -56,7 +53,8 @@ export class NewsContainer extends Component {
 
 NewsContainer.propTypes = {
   newsStories: arrayOf(object),
-  populateNews: func
+  populateNews: func,
+  category: string
 };
 
 export const mapStateToProps = ({ newsStories }) => ({ newsStories });
@@ -65,6 +63,4 @@ export const mapDispatchToProps = dispatch => ({
   populateNews: stories => dispatch(populateNews(stories))
 });
 
-export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(NewsContainer)
-);
+export default connect(mapStateToProps, mapDispatchToProps)(NewsContainer);
