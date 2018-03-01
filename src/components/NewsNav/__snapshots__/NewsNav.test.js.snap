@@ -21,102 +21,102 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <NavLink
-          activeClassName="nav-link selected"
+          activeClassName="active"
           ariaCurrent="true"
           className="nav-link"
           name="home"
           onClick={[Function]}
-          to="/home"
+          to="/home/undefined"
 >
           Home
 </NavLink>,
         <NavLink
-          activeClassName="nav-link selected"
+          activeClassName="active"
           ariaCurrent="true"
           className="nav-link"
           name="world"
           onClick={[Function]}
-          to="/world"
+          to="/world/undefined"
 >
           World
 </NavLink>,
         <NavLink
-          activeClassName="nav-link selected"
+          activeClassName="active"
           ariaCurrent="true"
           className="nav-link"
           name="national"
           onClick={[Function]}
-          to="/national"
+          to="/national/undefined"
 >
           National
 </NavLink>,
         <NavLink
-          activeClassName="nav-link selected"
+          activeClassName="active"
           ariaCurrent="true"
           className="nav-link"
           name="nyregion"
           onClick={[Function]}
-          to="/nyregion"
+          to="/nyregion/undefined"
 >
           NY Region
 </NavLink>,
         <NavLink
-          activeClassName="nav-link selected"
+          activeClassName="active"
           ariaCurrent="true"
           className="nav-link"
           name="politics"
           onClick={[Function]}
-          to="/politics"
+          to="/politics/undefined"
 >
           Politics
 </NavLink>,
         <NavLink
-          activeClassName="nav-link selected"
+          activeClassName="active"
           ariaCurrent="true"
           className="nav-link"
           name="technology"
           onClick={[Function]}
-          to="/technology"
+          to="/technology/undefined"
 >
           Technology
 </NavLink>,
         <NavLink
-          activeClassName="nav-link selected"
+          activeClassName="active"
           ariaCurrent="true"
           className="nav-link"
           name="science"
           onClick={[Function]}
-          to="/science"
+          to="/science/undefined"
 >
           Science
 </NavLink>,
         <NavLink
-          activeClassName="nav-link selected"
+          activeClassName="active"
           ariaCurrent="true"
           className="nav-link"
           name="business"
           onClick={[Function]}
-          to="/business"
+          to="/business/undefined"
 >
           Business
 </NavLink>,
         <NavLink
-          activeClassName="nav-link selected"
+          activeClassName="active"
           ariaCurrent="true"
           className="nav-link"
           name="opinion"
           onClick={[Function]}
-          to="/opinion"
+          to="/opinion/undefined"
 >
           Opinion
 </NavLink>,
         <NavLink
-          activeClassName="nav-link selected"
+          activeClassName="active"
           ariaCurrent="true"
           className="nav-link"
           name="tmagazine"
           onClick={[Function]}
-          to="/tmagazine"
+          to="/tmagazine/undefined"
 >
           NYT Magazine
 </NavLink>,
@@ -130,13 +130,13 @@ ShallowWrapper {
         "key": "home",
         "nodeType": "function",
         "props": Object {
-          "activeClassName": "nav-link selected",
+          "activeClassName": "active",
           "ariaCurrent": "true",
           "children": "Home",
           "className": "nav-link",
           "name": "home",
           "onClick": [Function],
-          "to": "/home",
+          "to": "/home/undefined",
         },
         "ref": null,
         "rendered": "Home",
@@ -147,13 +147,13 @@ ShallowWrapper {
         "key": "world",
         "nodeType": "function",
         "props": Object {
-          "activeClassName": "nav-link selected",
+          "activeClassName": "active",
           "ariaCurrent": "true",
           "children": "World",
           "className": "nav-link",
           "name": "world",
           "onClick": [Function],
-          "to": "/world",
+          "to": "/world/undefined",
         },
         "ref": null,
         "rendered": "World",
@@ -164,13 +164,13 @@ ShallowWrapper {
         "key": "national",
         "nodeType": "function",
         "props": Object {
-          "activeClassName": "nav-link selected",
+          "activeClassName": "active",
           "ariaCurrent": "true",
           "children": "National",
           "className": "nav-link",
           "name": "national",
           "onClick": [Function],
-          "to": "/national",
+          "to": "/national/undefined",
         },
         "ref": null,
         "rendered": "National",
@@ -181,13 +181,13 @@ ShallowWrapper {
         "key": "nyregion",
         "nodeType": "function",
         "props": Object {
-          "activeClassName": "nav-link selected",
+          "activeClassName": "active",
           "ariaCurrent": "true",
           "children": "NY Region",
           "className": "nav-link",
           "name": "nyregion",
           "onClick": [Function],
-          "to": "/nyregion",
+          "to": "/nyregion/undefined",
         },
         "ref": null,
         "rendered": "NY Region",
@@ -198,13 +198,13 @@ ShallowWrapper {
         "key": "politics",
         "nodeType": "function",
         "props": Object {
-          "activeClassName": "nav-link selected",
+          "activeClassName": "active",
           "ariaCurrent": "true",
           "children": "Politics",
           "className": "nav-link",
           "name": "politics",
           "onClick": [Function],
-          "to": "/politics",
+          "to": "/politics/undefined",
         },
         "ref": null,
         "rendered": "Politics",
@@ -215,13 +215,13 @@ ShallowWrapper {
         "key": "technology",
         "nodeType": "function",
         "props": Object {
-          "activeClassName": "nav-link selected",
+          "activeClassName": "active",
           "ariaCurrent": "true",
           "children": "Technology",
           "className": "nav-link",
           "name": "technology",
           "onClick": [Function],
-          "to": "/technology",
+          "to": "/technology/undefined",
         },
         "ref": null,
         "rendered": "Technology",
@@ -232,13 +232,13 @@ ShallowWrapper {
         "key": "science",
         "nodeType": "function",
         "props": Object {
-          "activeClassName": "nav-link selected",
+          "activeClassName": "active",
           "ariaCurrent": "true",
           "children": "Science",
           "className": "nav-link",
           "name": "science",
           "onClick": [Function],
-          "to": "/science",
+          "to": "/science/undefined",
         },
         "ref": null,
         "rendered": "Science",
@@ -249,13 +249,13 @@ ShallowWrapper {
         "key": "business",
         "nodeType": "function",
         "props": Object {
-          "activeClassName": "nav-link selected",
+          "activeClassName": "active",
           "ariaCurrent": "true",
           "children": "Business",
           "className": "nav-link",
           "name": "business",
           "onClick": [Function],
-          "to": "/business",
+          "to": "/business/undefined",
         },
         "ref": null,
         "rendered": "Business",
@@ -266,13 +266,13 @@ ShallowWrapper {
         "key": "opinion",
         "nodeType": "function",
         "props": Object {
-          "activeClassName": "nav-link selected",
+          "activeClassName": "active",
           "ariaCurrent": "true",
           "children": "Opinion",
           "className": "nav-link",
           "name": "opinion",
           "onClick": [Function],
-          "to": "/opinion",
+          "to": "/opinion/undefined",
         },
         "ref": null,
         "rendered": "Opinion",
@@ -283,13 +283,13 @@ ShallowWrapper {
         "key": "tmagazine",
         "nodeType": "function",
         "props": Object {
-          "activeClassName": "nav-link selected",
+          "activeClassName": "active",
           "ariaCurrent": "true",
           "children": "NYT Magazine",
           "className": "nav-link",
           "name": "tmagazine",
           "onClick": [Function],
-          "to": "/tmagazine",
+          "to": "/tmagazine/undefined",
         },
         "ref": null,
         "rendered": "NYT Magazine",
@@ -306,102 +306,102 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <NavLink
-            activeClassName="nav-link selected"
+            activeClassName="active"
             ariaCurrent="true"
             className="nav-link"
             name="home"
             onClick={[Function]}
-            to="/home"
+            to="/home/undefined"
 >
             Home
 </NavLink>,
           <NavLink
-            activeClassName="nav-link selected"
+            activeClassName="active"
             ariaCurrent="true"
             className="nav-link"
             name="world"
             onClick={[Function]}
-            to="/world"
+            to="/world/undefined"
 >
             World
 </NavLink>,
           <NavLink
-            activeClassName="nav-link selected"
+            activeClassName="active"
             ariaCurrent="true"
             className="nav-link"
             name="national"
             onClick={[Function]}
-            to="/national"
+            to="/national/undefined"
 >
             National
 </NavLink>,
           <NavLink
-            activeClassName="nav-link selected"
+            activeClassName="active"
             ariaCurrent="true"
             className="nav-link"
             name="nyregion"
             onClick={[Function]}
-            to="/nyregion"
+            to="/nyregion/undefined"
 >
             NY Region
 </NavLink>,
           <NavLink
-            activeClassName="nav-link selected"
+            activeClassName="active"
             ariaCurrent="true"
             className="nav-link"
             name="politics"
             onClick={[Function]}
-            to="/politics"
+            to="/politics/undefined"
 >
             Politics
 </NavLink>,
           <NavLink
-            activeClassName="nav-link selected"
+            activeClassName="active"
             ariaCurrent="true"
             className="nav-link"
             name="technology"
             onClick={[Function]}
-            to="/technology"
+            to="/technology/undefined"
 >
             Technology
 </NavLink>,
           <NavLink
-            activeClassName="nav-link selected"
+            activeClassName="active"
             ariaCurrent="true"
             className="nav-link"
             name="science"
             onClick={[Function]}
-            to="/science"
+            to="/science/undefined"
 >
             Science
 </NavLink>,
           <NavLink
-            activeClassName="nav-link selected"
+            activeClassName="active"
             ariaCurrent="true"
             className="nav-link"
             name="business"
             onClick={[Function]}
-            to="/business"
+            to="/business/undefined"
 >
             Business
 </NavLink>,
           <NavLink
-            activeClassName="nav-link selected"
+            activeClassName="active"
             ariaCurrent="true"
             className="nav-link"
             name="opinion"
             onClick={[Function]}
-            to="/opinion"
+            to="/opinion/undefined"
 >
             Opinion
 </NavLink>,
           <NavLink
-            activeClassName="nav-link selected"
+            activeClassName="active"
             ariaCurrent="true"
             className="nav-link"
             name="tmagazine"
             onClick={[Function]}
-            to="/tmagazine"
+            to="/tmagazine/undefined"
 >
             NYT Magazine
 </NavLink>,
@@ -415,13 +415,13 @@ ShallowWrapper {
           "key": "home",
           "nodeType": "function",
           "props": Object {
-            "activeClassName": "nav-link selected",
+            "activeClassName": "active",
             "ariaCurrent": "true",
             "children": "Home",
             "className": "nav-link",
             "name": "home",
             "onClick": [Function],
-            "to": "/home",
+            "to": "/home/undefined",
           },
           "ref": null,
           "rendered": "Home",
@@ -432,13 +432,13 @@ ShallowWrapper {
           "key": "world",
           "nodeType": "function",
           "props": Object {
-            "activeClassName": "nav-link selected",
+            "activeClassName": "active",
             "ariaCurrent": "true",
             "children": "World",
             "className": "nav-link",
             "name": "world",
             "onClick": [Function],
-            "to": "/world",
+            "to": "/world/undefined",
           },
           "ref": null,
           "rendered": "World",
@@ -449,13 +449,13 @@ ShallowWrapper {
           "key": "national",
           "nodeType": "function",
           "props": Object {
-            "activeClassName": "nav-link selected",
+            "activeClassName": "active",
             "ariaCurrent": "true",
             "children": "National",
             "className": "nav-link",
             "name": "national",
             "onClick": [Function],
-            "to": "/national",
+            "to": "/national/undefined",
           },
           "ref": null,
           "rendered": "National",
@@ -466,13 +466,13 @@ ShallowWrapper {
           "key": "nyregion",
           "nodeType": "function",
           "props": Object {
-            "activeClassName": "nav-link selected",
+            "activeClassName": "active",
             "ariaCurrent": "true",
             "children": "NY Region",
             "className": "nav-link",
             "name": "nyregion",
             "onClick": [Function],
-            "to": "/nyregion",
+            "to": "/nyregion/undefined",
           },
           "ref": null,
           "rendered": "NY Region",
@@ -483,13 +483,13 @@ ShallowWrapper {
           "key": "politics",
           "nodeType": "function",
           "props": Object {
-            "activeClassName": "nav-link selected",
+            "activeClassName": "active",
             "ariaCurrent": "true",
             "children": "Politics",
             "className": "nav-link",
             "name": "politics",
             "onClick": [Function],
-            "to": "/politics",
+            "to": "/politics/undefined",
           },
           "ref": null,
           "rendered": "Politics",
@@ -500,13 +500,13 @@ ShallowWrapper {
           "key": "technology",
           "nodeType": "function",
           "props": Object {
-            "activeClassName": "nav-link selected",
+            "activeClassName": "active",
             "ariaCurrent": "true",
             "children": "Technology",
             "className": "nav-link",
             "name": "technology",
             "onClick": [Function],
-            "to": "/technology",
+            "to": "/technology/undefined",
           },
           "ref": null,
           "rendered": "Technology",
@@ -517,13 +517,13 @@ ShallowWrapper {
           "key": "science",
           "nodeType": "function",
           "props": Object {
-            "activeClassName": "nav-link selected",
+            "activeClassName": "active",
             "ariaCurrent": "true",
             "children": "Science",
             "className": "nav-link",
             "name": "science",
             "onClick": [Function],
-            "to": "/science",
+            "to": "/science/undefined",
           },
           "ref": null,
           "rendered": "Science",
@@ -534,13 +534,13 @@ ShallowWrapper {
           "key": "business",
           "nodeType": "function",
           "props": Object {
-            "activeClassName": "nav-link selected",
+            "activeClassName": "active",
             "ariaCurrent": "true",
             "children": "Business",
             "className": "nav-link",
             "name": "business",
             "onClick": [Function],
-            "to": "/business",
+            "to": "/business/undefined",
           },
           "ref": null,
           "rendered": "Business",
@@ -551,13 +551,13 @@ ShallowWrapper {
           "key": "opinion",
           "nodeType": "function",
           "props": Object {
-            "activeClassName": "nav-link selected",
+            "activeClassName": "active",
             "ariaCurrent": "true",
             "children": "Opinion",
             "className": "nav-link",
             "name": "opinion",
             "onClick": [Function],
-            "to": "/opinion",
+            "to": "/opinion/undefined",
           },
           "ref": null,
           "rendered": "Opinion",
@@ -568,13 +568,13 @@ ShallowWrapper {
           "key": "tmagazine",
           "nodeType": "function",
           "props": Object {
-            "activeClassName": "nav-link selected",
+            "activeClassName": "active",
             "ariaCurrent": "true",
             "children": "NYT Magazine",
             "className": "nav-link",
             "name": "tmagazine",
             "onClick": [Function],
-            "to": "/tmagazine",
+            "to": "/tmagazine/undefined",
           },
           "ref": null,
           "rendered": "NYT Magazine",

@@ -21,22 +21,22 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <NavLink
-          activeClassName="nav-link selected"
+          activeClassName="active"
           ariaCurrent="true"
           className="nav-link"
           name="hourly"
           onClick={[Function]}
-          to="/hourly"
+          to="/undefined/hourly"
 >
           Hourly
 </NavLink>,
         <NavLink
-          activeClassName="nav-link selected"
+          activeClassName="active"
           ariaCurrent="true"
           className="nav-link"
           name="daily"
           onClick={[Function]}
-          to="/daily"
+          to="/undefined/daily"
 >
           Daily
 </NavLink>,
@@ -50,13 +50,13 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "activeClassName": "nav-link selected",
+          "activeClassName": "active",
           "ariaCurrent": "true",
           "children": "Hourly",
           "className": "nav-link",
           "name": "hourly",
           "onClick": [Function],
-          "to": "/hourly",
+          "to": "/undefined/hourly",
         },
         "ref": null,
         "rendered": "Hourly",
@@ -67,13 +67,13 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "activeClassName": "nav-link selected",
+          "activeClassName": "active",
           "ariaCurrent": "true",
           "children": "Daily",
           "className": "nav-link",
           "name": "daily",
           "onClick": [Function],
-          "to": "/daily",
+          "to": "/undefined/daily",
         },
         "ref": null,
         "rendered": "Daily",
@@ -90,22 +90,22 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <NavLink
-            activeClassName="nav-link selected"
+            activeClassName="active"
             ariaCurrent="true"
             className="nav-link"
             name="hourly"
             onClick={[Function]}
-            to="/hourly"
+            to="/undefined/hourly"
 >
             Hourly
 </NavLink>,
           <NavLink
-            activeClassName="nav-link selected"
+            activeClassName="active"
             ariaCurrent="true"
             className="nav-link"
             name="daily"
             onClick={[Function]}
-            to="/daily"
+            to="/undefined/daily"
 >
             Daily
 </NavLink>,
@@ -119,13 +119,13 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "activeClassName": "nav-link selected",
+            "activeClassName": "active",
             "ariaCurrent": "true",
             "children": "Hourly",
             "className": "nav-link",
             "name": "hourly",
             "onClick": [Function],
-            "to": "/hourly",
+            "to": "/undefined/hourly",
           },
           "ref": null,
           "rendered": "Hourly",
@@ -136,13 +136,13 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "activeClassName": "nav-link selected",
+            "activeClassName": "active",
             "ariaCurrent": "true",
             "children": "Daily",
             "className": "nav-link",
             "name": "daily",
             "onClick": [Function],
-            "to": "/daily",
+            "to": "/undefined/daily",
           },
           "ref": null,
           "rendered": "Daily",
