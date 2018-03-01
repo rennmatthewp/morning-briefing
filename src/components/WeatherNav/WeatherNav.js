@@ -3,18 +3,18 @@ import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import './WeatherNav.css';
 
-export const WeatherNav = ({ selectCategory }) => {
+export const WeatherNav = ({ selectCategory, section }) => {
   return (
     <div className="weather-nav nav">
       <NavLink
-        to="/hourly"
+        to={`/${section}/hourly`}
         name="hourly"
         onClick={selectCategory}
         className="nav-link">
         Hourly
       </NavLink>
       <NavLink
-        to="/daily"
+        to={`/${section}/daily`}
         name="daily"
         onClick={selectCategory}
         className="nav-link">
@@ -25,5 +25,6 @@ export const WeatherNav = ({ selectCategory }) => {
 };
 
 WeatherNav.propTypes = {
-  selectCategory: PropTypes.func
+  selectCategory: PropTypes.func,
+  section: PropTypes.string
 };

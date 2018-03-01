@@ -4,11 +4,11 @@ import { NavLink } from 'react-router-dom';
 import { newsSections } from '../../helper/apiCalls';
 import './NewsNav.css';
 
-export const NewsNav = ({ selectSection }) => {
+export const NewsNav = ({ selectSection, category }) => {
   const sectionButtons = Object.keys(newsSections).map(section => {
     return (
       <NavLink
-        to={`/${section}`}
+        to={`/${section}/${category}`}
         name={section}
         key={section}
         onClick={selectSection}
@@ -22,5 +22,6 @@ export const NewsNav = ({ selectSection }) => {
 };
 
 NewsNav.propTypes = {
-  selectSection: PropTypes.func
+  selectSection: PropTypes.func,
+  category: PropTypes.string
 };

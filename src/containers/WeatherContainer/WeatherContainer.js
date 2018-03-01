@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { object, func } from 'prop-types';
+import { object, func, string } from 'prop-types';
 import { connect } from 'react-redux';
-import { Route } from 'react-router-dom';
 import { populateWeather } from '../../actions';
 import { getWeatherData, cleanWeatherData } from '../../helper/apiCalls';
 import { WeatherNav } from '../../components/WeatherNav/WeatherNav';
@@ -20,14 +19,19 @@ export class WeatherContainer extends Component {
     this.getWeather();
   }
 
-  getWeather = async () => {
+  getWeather = async (category = 'hourly') => {
     try {
-      const weatherResponse = await getWeatherData();
+      const weatherResponse = await getWeatherData(category);
       const cleanedWeatherData = await cleanWeatherData(weatherResponse);
       this.props.populateWeather(cleanedWeatherData);
     } catch (error) {
       this.setState({ errorStatus: error });
     }
+  };
+
+  selectCategory = event => {
+    const { name } = event.target;
+    this.getWeather(name);
   };
 
   render() {
@@ -37,11 +41,11 @@ export class WeatherContainer extends Component {
 
     return (
       <div className="weather-container">
-        <WeatherNav selectCategory={this.selectCategory} />
-        <Route
-          path="/"
-          render={() => <WeatherCategory weather={this.props.weather} />}
+        <WeatherNav
+          selectCategory={this.selectCategory}
+          section={this.props.section}
         />
+        <WeatherCategory weather={this.props.weather} />
       </div>
     );
   }
@@ -49,10 +53,11 @@ export class WeatherContainer extends Component {
 
 WeatherContainer.propTypes = {
   weather: object,
-  populateWeather: func
+  populateWeather: func,
+  section: string
 };
 
-export const mapStateToProps = ({ weather }) => ({weather});
+export const mapStateToProps = ({ weather }) => ({ weather });
 
 export const mapDispatchToProps = dispatch => ({
   populateWeather: weather => dispatch(populateWeather(weather))
