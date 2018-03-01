@@ -29,10 +29,10 @@ export const getNewsData = async (section = 'home') => {
   }
 };
 
-export const getWeatherData = async () => {
+export const getWeatherData = async (category = 'hourly') => {
   try {
     const response = await fetch(
-      `http://api.wunderground.com/api/${wuKey}/conditions/hourly/q/CO/Denver.json`
+      `http://api.wunderground.com/api/${wuKey}/conditions/${category}/q/CO/Denver.json`
     );
     if (response.status < 300) {
       return await response.json();
